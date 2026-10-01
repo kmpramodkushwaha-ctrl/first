@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<!-- ============================================================
+     SEO / META  (EDIT: title & description here if needed)
+============================================================ -->
+<title>Antra Bakery | Fresh Cakes, Pastries &amp; Cafe in Prathvipur Dhai</title>
+<meta name="description" content="Antra Bakery — Baked Fresh. Made with Love. Freshly baked cakes, pastries, breads, cookies & cafe favourites in Prathvipur Dhai, Uttar Pradesh. Order instantly on WhatsApp: 89044 77337.">
+<meta name="theme-color" content="#3B2418">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233B2418'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='38' fill='%23C8963E' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Antra Bakery | Fresh Cakes, Pastries & Cafe in Prathvipur Dhai">
+<meta property="og:description" content="Baked Fresh. Made with Love. Order cakes, pastries, breads & cafe favourites on WhatsApp.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&q=75&auto=format&fit=crop">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Antra Bakery | Prathvipur Dhai">
+<meta name="twitter:description" content="Baked Fresh. Made with Love. Order on WhatsApp: 89044 77337.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&q=75&auto=format&fit=crop">
+
+<!-- JSON-LD LocalBusiness schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Antra Bakery",
+  "description": "Freshly baked cakes, pastries, breads, cookies and cafe favourites in Prathvipur Dhai, Uttar Pradesh.",
+  "telephone": "+918904477337",
+  "priceRange": "₹₹",
+  "servesCuisine": ["Bakery", "Cafe", "Desserts"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Prathvipur Dhai", "addressRegion": "Uttar Pradesh", "addressCountry": "IN" },
+  "geo": { "@type": "GeoCoordinates", "latitude": 27.6189651, "longitude": 79.5533194 },
+  "hasMap": "https://www.google.com/maps/place/Prathvipur+Dhai/@27.6189698,79.5507445,17z",
+  "sameAs": ["https://instagram.com/atulk.ush"],
+  "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "08:00", "closes": "22:00" },
+  "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200"
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind (CDN) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: { cream:'#FFF8F0', cocoa:'#3B2418', 'cocoa-deep':'#2A1810', caramel:'#C8963E', 'gold-ink':'#8F6420', rose:'#D9776B', beige:'#F3E5D3', wpp:'#25D366' },
+    fontFamily: { serif:['"Playfair Display"','serif'], sans:['Poppins','sans-serif'], script:['"Dancing Script"','cursive'] },
+    boxShadow: { soft:'0 10px 40px -12px rgba(59,36,24,.16)', card:'0 2px 6px rgba(59,36,24,.05), 0 20px 45px -22px rgba(59,36,24,.25)', lift:'0 26px 60px -18px rgba(59,36,24,.35)' }
+  } }
+};
+</script>
+
+<style>
+/* ============================================================
+   DESIGN SYSTEM — tokens, components, motion
+============================================================ */
+:root{
+  --cream:#FFF8F0; --cocoa:#3B2418; --cocoa-deep:#2A1810; --caramel:#C8963E;
+  --gold-ink:#8F6420; --rose:#D9776B; --beige:#F3E5D3; --wpp:#25D366;
+  --nav-h:78px;
+}
+html{overflow-x:clip}
+body{overflow-x:clip;background:var(--cream);color:var(--cocoa);font-family:Poppins,sans-serif;-webkit-font-smoothing:antialiased}
+::selection{background:var(--caramel);color:#fff}
+:focus-visible{outline:2px solid var(--caramel);outline-offset:3px;border-radius:6px}
+.no-bar::-webkit-scrollbar{display:none}.no-bar{scrollbar-width:none}
+
+/* film grain over everything (very subtle) */
+body::after{content:'';position:fixed;inset:0;z-index:94;pointer-events:none;opacity:.05;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E")}
+
+/* ---------- section headers ---------- */
+.overline{font:600 11px/1 Poppins;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-ink);display:inline-flex;align-items:center;gap:14px}
+.overline::before,.overline::after{content:'';width:34px;height:1px;background:var(--caramel);opacity:.65}
+.on-dark .overline{color:#E4C27E}
+.h2{font-family:"Playfair Display",serif;font-weight:700;font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.12}
+
+/* ---------- buttons ---------- */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 15px Poppins;border-radius:999px;padding:15px 28px;cursor:pointer;transition:box-shadow .3s,background .3s,color .3s,border-color .3s;border:none}
+.btn-wa{background:var(--wpp);color:#0B3B21;box-shadow:0 12px 26px -10px rgba(37,211,102,.6)}
+.btn-wa:hover{box-shadow:0 18px 34px -10px rgba(37,211,102,.7)}
+.btn-gold{border:1.5px solid rgba(200,150,62,.85);color:var(--cream);background:rgba(59,36,24,.15);backdrop-filter:blur(4px)}
+.btn-gold:hover{background:var(--cream);color:var(--cocoa);border-color:var(--cream)}
+.btn-dark{background:var(--cocoa);color:var(--cream)}
+.btn-dark:hover{background:var(--cocoa-deep)}
+.btn-ig{border:1.5px solid rgba(224,191,120,.5);color:var(--cream)}
+.btn-ig:hover{background:rgba(224,191,120,.14);border-color:#E0BF78}
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.45);width:14px;height:14px;transform:scale(0);animation:ripple .65s ease-out forwards;pointer-events:none}
+@keyframes ripple{to{transform:scale(14);opacity:0}}
+
+/* ---------- product card ---------- */
+.p-card{position:relative;display:flex;flex-direction:column;background:var(--beige);border:1px solid rgba(59,36,24,.08);border-radius:26px;overflow:hidden;
+  box-shadow:0 2px 6px rgba(59,36,24,.05),0 20px 45px -22px rgba(59,36,24,.25);transition:box-shadow .35s;transform-style:preserve-3d;will-change:transform}
+.p-card:hover{box-shadow:0 26px 60px -20px rgba(59,36,24,.38)}
+.p-card--dark{background:var(--cocoa);border-color:rgba(255,248,240,.14);color:var(--cream)}
+.p-card__media{position:relative;aspect-ratio:4/3;overflow:hidden;background:#E9D9C4;cursor:pointer}
+.p-card__media img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.p-card:hover .p-card__media img{transform:scale(1.07)}
+.p-card__body{padding:15px 17px 17px;display:flex;flex-direction:column;gap:9px;flex:1}
+.p-name{font-family:"Playfair Display",serif;font-weight:700;font-size:17.5px;line-height:1.2}
+.p-desc{font-size:12px;line-height:1.55;color:rgba(59,36,24,.62);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.p-card--dark .p-desc{color:rgba(255,248,240,.62)}
+.p-foot{margin-top:auto;display:flex;flex-direction:column;gap:10px}
+.ribbon{position:absolute;top:16px;right:-38px;transform:rotate(45deg);background:var(--caramel);color:#fff;font:600 10px Poppins;letter-spacing:.16em;padding:6px 42px;box-shadow:0 6px 14px rgba(59,36,24,.35)}
+
+/* badges */
+.badge{display:inline-flex;align-items:center;gap:4px;font:600 9.5px Poppins;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;backdrop-filter:blur(4px)}
+.badge--best{background:var(--caramel);color:#fff}
+.badge--egg{background:rgba(255,248,240,.92);color:#4C6B33}
+.badge--veg{background:rgba(255,248,240,.92);color:var(--cocoa)}
+.badge--new,.badge--today{background:var(--rose);color:#fff}
+.badge--limit{background:rgba(43,24,16,.82);color:#F3D9A0}
+.p-card--dark .badge--egg,.p-card--dark .badge--veg{background:rgba(255,248,240,.16);color:var(--cream)}
+
+/* stars */
+.stars{position:relative;display:inline-flex;line-height:0}
+.stars-bg,.stars-fill{display:inline-flex;gap:2px}
+.stars-bg{color:#D9C6A8}
+.stars-fill{position:absolute;left:0;top:0;overflow:hidden;color:var(--caramel);white-space:nowrap}
+
+/* pills / steppers / prices */
+.v-pill{font:500 11.5px Poppins;padding:6px 12px;border-radius:999px;border:1px solid rgba(59,36,24,.2);color:var(--cocoa);background:transparent;cursor:pointer;transition:.25s}
+.v-pill.active{background:var(--cocoa);color:var(--cream);border-color:var(--cocoa)}
+.p-card--dark .v-pill{border-color:rgba(255,248,240,.28);color:var(--cream)}
+.p-card--dark .v-pill.active{background:var(--caramel);color:#fff;border-color:var(--caramel)}
+.stepper{display:inline-flex;align-items:center;border:1px solid rgba(59,36,24,.16);border-radius:999px;overflow:hidden}
+.p-card--dark .stepper{border-color:rgba(255,248,240,.25)}
+.stepper button{width:30px;height:30px;display:grid;place-items:center;transition:background .2s;color:inherit;cursor:pointer}
+.stepper button:hover{background:rgba(59,36,24,.08)}
+.p-card--dark .stepper button:hover{background:rgba(255,248,240,.12)}
+.stepper .qty-val{min-width:26px;text-align:center;font:600 13px Poppins}
+.price{font-family:"Playfair Display",serif;font-weight:800;font-size:21px;color:var(--gold-ink);white-space:nowrap}
+.p-card--dark .price{color:#E4C27E}
+.btn-order{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:7px;background:var(--wpp);color:#0B3B21;font:600 12.5px Poppins;padding:11px 12px;border-radius:999px;cursor:pointer;transition:.25s;box-shadow:0 8px 18px -8px rgba(37,211,102,.55)}
+.btn-order:hover{box-shadow:0 12px 24px -8px rgba(37,211,102,.7)}
+.icon-btn{width:40px;height:40px;border-radius:13px;border:1px solid rgba(59,36,24,.16);display:grid;place-items:center;color:var(--cocoa);background:rgba(255,255,255,.55);cursor:pointer;transition:.25s;flex:none}
+.icon-btn:hover{background:var(--cocoa);color:var(--cream)}
+.p-card--dark .icon-btn{border-color:rgba(255,248,240,.22);background:rgba(255,248,240,.08);color:var(--cream)}
+.p-card--dark .icon-btn:hover{background:var(--cream);color:var(--cocoa)}
+.wish-btn{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(255,248,240,.85);color:var(--cocoa);backdrop-filter:blur(4px);cursor:pointer;transition:.25s;z-index:5;border:none}
+.wish-btn:hover{transform:scale(1.1)}
+.wish-btn.active{color:var(--rose)}
+.wish-btn.active svg{fill:var(--rose)}
+.wish-btn.pop{animation:pop .45s cubic-bezier(.2,2,.4,1)}
+@keyframes pop{40%{transform:scale(1.35)}100%{transform:scale(1)}}
+
+/* filter chips + tabs */
+.chip{font:500 12px Poppins;padding:8px 15px;border-radius:999px;border:1px solid rgba(59,36,24,.2);color:rgba(59,36,24,.75);background:transparent;cursor:pointer;transition:.25s;display:inline-flex;align-items:center;gap:6px}
+.chip:hover{border-color:var(--cocoa)}
+.chip.active{background:var(--cocoa);color:var(--cream);border-color:var(--cocoa)}
+.tab{font:500 13px Poppins;padding:9px 13px;border-radius:999px;color:rgba(59,36,24,.6);white-space:nowrap;cursor:pointer;transition:.25s;background:transparent;border:none}
+.tab:hover{color:var(--cocoa)}
+.tab.active{color:var(--cocoa);font-weight:600}
+.tab-ink{position:absolute;bottom:0;height:3px;background:var(--caramel);border-radius:99px;transition:left .35s cubic-bezier(.2,.8,.2,1),width .35s cubic-bezier(.2,.8,.2,1)}
+
+/* skeleton */
+.sk{background:linear-gradient(100deg,rgba(59,36,24,.06) 40%,rgba(59,36,24,.13) 50%,rgba(59,36,24,.06) 60%);background-size:200% 100%;animation:shimmer 1.1s infinite;border-radius:12px}
+@keyframes shimmer{to{background-position:-200% 0}}
+.sk-img{aspect-ratio:4/3;border-radius:0}
+.sk-line{height:13px;margin:10px 14px}
+.sk-block{height:38px;margin:12px 14px 16px}
+
+/* navbar */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .4s,box-shadow .4s,border-color .4s;border-bottom:1px solid transparent}
+#navbar .nav-inner{height:var(--nav-h);transition:height .35s}
+#navbar.scrolled{background:rgba(255,248,240,.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom-color:rgba(59,36,24,.08);box-shadow:0 12px 30px -20px rgba(59,36,24,.3)}
+#navbar.scrolled .nav-inner{height:62px}
+.nav-link{position:relative;font:500 13.5px Poppins;color:rgba(255,248,240,.85);padding:5px 1px;transition:color .3s}
+.nav-link::after{content:'';position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--caramel);transition:width .3s}
+.nav-link:hover::after,.nav-link.active::after{width:100%}
+#navbar.scrolled .nav-link{color:rgba(59,36,24,.72)}
+#navbar.scrolled .nav-link.active,#navbar.scrolled .nav-link:hover{color:var(--cocoa)}
+.logo-sub{letter-spacing:.42em;font:600 8.5px Poppins;color:var(--caramel)}
+
+/* mobile menu */
+#mobileMenu{position:fixed;inset:0;z-index:60;background:var(--cocoa-deep);color:var(--cream);display:flex;flex-direction:column;padding:26px 26px calc(26px + env(safe-area-inset-bottom));opacity:0;pointer-events:none;transition:opacity .4s}
+#mobileMenu.open{opacity:1;pointer-events:auto}
+#mobileMenu a.m-link{font-family:"Playfair Display",serif;font-size:30px;padding:10px 0;display:flex;align-items:baseline;gap:14px;border-bottom:1px solid rgba(255,248,240,.09)}
+#mobileMenu a.m-link i{font:600 11px Poppins;color:var(--caramel);font-style:normal}
+.burger{width:44px;height:44px;border-radius:12px;display:inline-flex;flex-direction:column;justify-content:center;gap:6px;align-items:center;cursor:pointer;border:1px solid rgba(255,248,240,.35);background:rgba(59,36,24,.2)}
+#navbar.scrolled .burger{border-color:rgba(59,36,24,.25)}
+.burger span{display:block;width:20px;height:2px;background:currentColor;border-radius:2px;transition:.35s;color:var(--cream)}
+#navbar.scrolled .burger span{background:var(--cocoa)}
+.burger.open span{background:var(--cream)!important}
+.burger.open span:first-child{transform:translateY(4px) rotate(45deg)}
+.burger.open span:last-child{transform:translateY(-4px) rotate(-45deg)}
+
+/* open/closed badge */
+.open-badge{display:inline-flex;align-items:center;gap:7px;font:600 10.5px Poppins;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px;border:1px solid}
+.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor;animation:blink 2s infinite}
+@keyframes blink{50%{opacity:.35}}
+.open-badge.open{color:#2E7D4F;border-color:rgba(46,125,79,.35);background:rgba(46,125,79,.08)}
+.open-badge.soon{color:#B4730F;border-color:rgba(180,115,15,.35);background:rgba(180,115,15,.08)}
+.open-badge.closed{color:#A34A3E;border-color:rgba(163,74,62,.35);background:rgba(163,74,62,.08)}
+
+/* hero */
+.hero-h1{font-family:"Playfair Display",serif;font-weight:800;font-size:clamp(2.5rem,6.4vw,4.7rem);line-height:1.08;color:var(--cream)}
+.word{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.08em;margin-right:.24em}
+.word-in{display:inline-block}
+.trust-chip{display:inline-flex;align-items:center;gap:8px;font:500 12px Poppins;color:rgba(255,248,240,.9);padding:9px 16px;border-radius:999px;border:1px solid rgba(255,248,240,.22);background:rgba(255,248,240,.08);backdrop-filter:blur(8px)}
+.trust-chip svg{color:var(--caramel)}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-16px) rotate(var(--r,0deg))}}
+.float-el{animation:floaty 7.5s ease-in-out infinite}
+@keyframes kb{from{transform:scale(1.03)}to{transform:scale(1.16)}}
+#heroBg img{animation:kb 26s ease-in-out infinite alternate}
+.scroll-cue{width:26px;height:42px;border:1.5px solid rgba(255,248,240,.55);border-radius:999px;display:flex;justify-content:center;padding-top:7px}
+.scroll-cue i{width:3px;height:9px;border-radius:2px;background:var(--caramel);animation:wheel 1.9s infinite}
+@keyframes wheel{0%{transform:translateY(0);opacity:1}70%{transform:translateY(15px);opacity:0}100%{opacity:0}}
+
+/* marquee */
+.marquee-track{display:flex;width:max-content;animation:marquee 30s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.mq-item{display:inline-flex;align-items:center;gap:26px;padding-right:26px;font-family:"Playfair Display",serif;font-style:italic;font-size:19px;color:rgba(255,248,240,.85);white-space:nowrap}
+.mq-d{width:6px;height:6px;background:var(--caramel);transform:rotate(45deg);flex:none}
+
+/* carousels */
+.bs-wrap{-webkit-mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.bs-track{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:10px 6px 22px;cursor:grab}
+.bs-track:active{cursor:grabbing}
+.bs-track>*{scroll-snap-align:start}
+.edge-btn{width:46px;height:46px;border-radius:50%;border:1px solid rgba(59,36,24,.18);display:grid;place-items:center;color:var(--cocoa);background:rgba(255,255,255,.7);cursor:pointer;transition:.25s}
+.edge-btn:hover{background:var(--cocoa);color:var(--cream)}
+
+/* why cards + steps */
+.why-card{background:rgba(255,255,255,.65);border:1px solid rgba(59,36,24,.08);border-radius:24px;padding:26px 22px;transition:transform .35s,box-shadow .35s}
+.why-card:hover{transform:translateY(-6px);box-shadow:0 26px 55px -22px rgba(59,36,24,.32)}
+.why-ic{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;background:rgba(200,150,62,.14);color:var(--gold-ink)}
+.step-num{font-family:"Playfair Display",serif;font-weight:800;font-size:44px;color:rgba(200,150,62,.35);line-height:1}
+
+/* owner */
+.arch{border-radius:230px 230px 30px 30px;overflow:hidden;position:relative;z-index:1}
+.arch-frame{position:relative}
+.arch-frame::before{content:'';position:absolute;inset:0;transform:translate(16px,16px);border:1.5px solid var(--caramel);border-radius:inherit;opacity:.8}
+.pull-quote{font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(1.35rem,2.4vw,1.75rem);line-height:1.45;color:#F3E5D3}
+.hl-item{border-left:2px solid var(--caramel);padding-left:14px}
+
+/* reviews */
+.rev-card{scroll-snap-align:start;flex:none;width:min(340px,84vw);background:#fff;border:1px solid rgba(59,36,24,.08);border-radius:24px;padding:24px;box-shadow:0 2px 6px rgba(59,36,24,.05),0 20px 45px -24px rgba(59,36,24,.25);display:flex;flex-direction:column;gap:12px}
+.bar{height:7px;border-radius:99px;background:rgba(59,36,24,.1);overflow:hidden}
+.bar>span{display:block;height:100%;background:var(--caramel);border-radius:99px;width:0;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.avatar{width:44px;height:44px;border-radius:50%;background:var(--beige);color:var(--gold-ink);display:grid;place-items:center;font-family:"Playfair Display",serif;font-weight:700;font-size:17px;border:1px solid rgba(200,150,62,.35)}
+
+/* gallery */
+.g-item{position:relative;overflow:hidden;border-radius:22px;cursor:zoom-in;break-inside:avoid;margin-bottom:18px;display:block;width:100%}
+.g-item img{width:100%;display:block;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.g-item:hover img{transform:scale(1.06)}
+.g-item::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(43,24,16,.72),transparent 55%);opacity:0;transition:.4s}
+.g-item:hover::after{opacity:1}
+.g-cap{position:absolute;left:16px;bottom:13px;z-index:2;color:var(--cream);font:500 13px Poppins;opacity:0;transform:translateY(8px);transition:.4s}
+.g-item:hover .g-cap{opacity:1;transform:none}
+
+/* FAQ */
+.faq__a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.2,.8,.2,1)}
+.faq.open .faq__a{grid-template-rows:1fr}
+.faq__a-in{overflow:hidden}
+.faq.open .faq__q svg{transform:rotate(45deg)}
+.faq__q svg{transition:transform .35s}
+
+/* contact tiles */
+.tile{display:flex;flex-direction:column;align-items:flex-start;gap:10px;background:#fff;border:1px solid rgba(59,36,24,.09);border-radius:22px;padding:20px;transition:transform .3s,box-shadow .3s}
+.tile:hover{transform:translateY(-5px);box-shadow:0 22px 45px -20px rgba(59,36,24,.3)}
+.tile-ic{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:rgba(200,150,62,.14);color:var(--gold-ink)}
+.tile--wa .tile-ic{background:rgba(37,211,102,.14);color:#15803D}
+
+/* floating contact dock — desktop vertical / mobile bottom bar */
+.dock-v{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:45;display:flex;flex-direction:column;gap:6px;padding:8px;border-radius:999px;background:rgba(255,248,240,.78);backdrop-filter:blur(14px);border:1px solid rgba(59,36,24,.1);box-shadow:0 18px 44px -18px rgba(59,36,24,.4)}
+.dock-v>a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:var(--cocoa);position:relative;transition:.25s}
+.dock-v>a:hover{background:var(--cocoa);color:var(--cream);transform:scale(1.08)}
+.dock-v .tip{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);background:var(--cocoa);color:var(--cream);font:500 11px Poppins;padding:6px 11px;border-radius:9px;opacity:0;pointer-events:none;transition:.25s;white-space:nowrap}
+.dock-v>a:hover .tip{opacity:1;transform:translateY(-50%) translateX(-2px)}
+.dock-wa{position:relative}
+.dock-wa::before{content:'';position:absolute;inset:0;border-radius:50%;background:rgba(37,211,102,.55);animation:pulse 2.2s infinite;z-index:-1}
+@keyframes pulse{0%{transform:scale(1);opacity:.8}75%{transform:scale(1.65);opacity:0}100%{opacity:0}}
+.dock-b{position:fixed;left:0;right:0;bottom:0;z-index:45;display:grid;grid-template-columns:repeat(4,1fr);background:rgba(42,24,16,.94);backdrop-filter:blur(14px);padding:8px 6px calc(8px + env(safe-area-inset-bottom));border-top:1px solid rgba(255,248,240,.12)}
+.dock-b a{display:flex;flex-direction:column;align-items:center;gap:4px;color:rgba(255,248,240,.85);font:500 10px Poppins;padding:6px 0;border-radius:12px;transition:.2s}
+.dock-b a:active{background:rgba(255,248,240,.12)}
+.dock-b a svg{width:20px;height:20px}
+.dock-b .wa-c{color:var(--wpp)}
+@media (min-width:768px){.dock-b{display:none}}
+@media (max-width:767px){.dock-v{display:none}body{padding-bottom:74px}}
+
+/* basket FAB + fly */
+#basketFab{position:fixed;right:18px;bottom:22px;z-index:46;width:56px;height:56px;border-radius:50%;background:var(--cocoa);color:var(--cream);display:grid;place-items:center;box-shadow:0 16px 36px -12px rgba(43,26,17,.6);cursor:pointer;border:none;transition:transform .3s}
+#basketFab:hover{transform:scale(1.06)}
+@media (max-width:767px){#basketFab{bottom:calc(84px + env(safe-area-inset-bottom))}}
+#basketFab .badge-n{position:absolute;top:-4px;right:-4px;min-width:20px;height:20px;border-radius:999px;background:var(--rose);color:#fff;font:700 11px Poppins;display:none;place-items:center;padding:0 5px;border:2px solid var(--cream)}
+#basketFab .badge-n.show{display:grid}
+#basketFab.bump{animation:bump .5s cubic-bezier(.2,2,.4,1)}
+@keyframes bump{40%{transform:scale(1.22)}100%{transform:scale(1)}}
+.fly-dot{position:fixed;width:16px;height:16px;border-radius:50%;background:var(--caramel);z-index:95;pointer-events:none;box-shadow:0 4px 12px rgba(200,150,62,.6)}
+
+/* drawer */
+#drawerScrim{position:fixed;inset:0;background:rgba(43,26,17,.55);z-index:69;opacity:0;pointer-events:none;transition:.4s;backdrop-filter:blur(2px)}
+#drawerScrim.open{opacity:1;pointer-events:auto}
+#drawer{position:fixed;top:0;right:0;height:100%;width:min(430px,94vw);z-index:70;background:var(--cream);box-shadow:-30px 0 70px rgba(43,26,17,.35);transform:translateX(105%);transition:transform .55s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column}
+#drawer.open{transform:none}
+.d-tab{flex:1;font:600 13px Poppins;padding:10px;border-radius:12px;background:transparent;color:rgba(59,36,24,.6);cursor:pointer;transition:.25s;border:none}
+.d-tab.active{background:var(--cocoa);color:var(--cream)}
+.b-item{display:flex;gap:12px;padding:12px;background:#fff;border:1px solid rgba(59,36,24,.08);border-radius:18px}
+.b-item img{width:64px;height:64px;object-fit:cover;border-radius:12px;flex:none}
+
+/* modals / lightbox */
+#quickModal,#lightbox{position:fixed;inset:0;z-index:75;display:grid;place-items:center;padding:16px;opacity:0;pointer-events:none;transition:opacity .35s}
+#quickModal.open,#lightbox.open{opacity:1;pointer-events:auto}
+.qm-back{position:absolute;inset:0;background:rgba(43,26,17,.62);backdrop-filter:blur(4px)}
+.qm-card{position:relative;background:var(--cream);border-radius:28px;max-width:860px;width:100%;max-height:88vh;overflow:auto;display:grid;grid-template-rows:auto;transform:scale(.94) translateY(16px);transition:transform .45s cubic-bezier(.2,.8,.2,1);box-shadow:0 40px 90px -30px rgba(43,26,17,.6)}
+@media (min-width:768px){.qm-card{grid-template-columns:1fr 1fr}}
+#quickModal.open .qm-card{transform:none}
+#lightbox{z-index:80}
+
+/* toasts */
+#toasts{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:96;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none;width:max-content;max-width:92vw}
+@media (max-width:767px){#toasts{bottom:calc(92px + env(safe-area-inset-bottom))}}
+.toast{display:flex;gap:9px;align-items:center;background:var(--cocoa-deep);color:var(--cream);padding:11px 19px;border-radius:999px;font:500 13px Poppins;box-shadow:0 18px 40px -12px rgba(43,26,17,.5);opacity:0;transform:translateY(12px);transition:.35s}
+.toast.show{opacity:1;transform:none}
+.toast svg{color:var(--wpp);flex:none}
+
+/* misc */
+#progressBar{position:fixed;top:0;left:0;right:0;height:3px;z-index:57;background:var(--caramel);transform-origin:0 50%;transform:scaleX(0)}
+#cursorGlow{position:fixed;width:340px;height:340px;border-radius:50%;pointer-events:none;z-index:44;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(200,150,62,.13),rgba(200,150,62,0) 62%);left:-999px;top:-999px}
+@media (hover:none),(pointer:coarse){#cursorGlow{display:none}}
+#backTop{position:fixed;left:18px;bottom:22px;z-index:46;width:46px;height:46px;border-radius:50%;background:var(--cream);color:var(--cocoa);border:1px solid rgba(59,36,24,.15);display:grid;place-items:center;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(10px);transition:.35s;box-shadow:0 14px 30px -12px rgba(59,36,24,.4)}
+#backTop.show{opacity:1;pointer-events:auto;transform:none}
+@media (max-width:767px){#backTop{bottom:calc(84px + env(safe-area-inset-bottom))}}
+.wave{position:absolute;left:0;right:0;bottom:-1px;line-height:0;pointer-events:none}
+.wave svg{display:block;width:100%;height:64px}
+.pre-steam path{stroke:var(--caramel);stroke-width:2;fill:none;stroke-linecap:round;opacity:0;animation:steam 1.5s ease-in-out infinite}
+.pre-steam path:nth-child(2){animation-delay:.28s}
+.pre-steam path:nth-child(3){animation-delay:.56s}
+@keyframes steam{0%{transform:translateY(7px);opacity:0}35%{opacity:.85}100%{transform:translateY(-11px);opacity:0}}
+#preloader{transition:opacity .6s,visibility .6s}
+#preloader.hide-fallback,#preloader.done{opacity:0;visibility:hidden;pointer-events:none}
+#festivalBar{transition:transform .5s}
+
+/* reduced motion — switch everything off */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+
+<body class="antialiased">
+
+<!-- Graceful no-JS notice -->
+<noscript>
+  <div style="background:#3B2418;color:#FFF8F0;padding:14px 18px;text-align:center;font:500 13px Poppins,sans-serif">
+    This page needs JavaScript for the interactive menu &amp; basket — but you can still reach us:
+    <a style="color:#25D366" href="tel:+918904477337">Call 89044 77337</a> ·
+    <a style="color:#25D366" href="https://wa.me/918904477337">WhatsApp</a> ·
+    <a style="color:#C8963E" href="https://instagram.com/atulk.ush" target="_blank" rel="noopener">Instagram</a>
+  </div>
+  <style>#preloader{display:none}</style>
+</noscript>
+
+<!-- ============================================================
+     PRELOADER (max ~1.5s)
+============================================================ -->
+<div id="preloader" class="fixed inset-0 z-[100] bg-cream flex flex-col items-center justify-center gap-3">
+  <svg class="pre-steam w-16 h-14 -mb-1" viewBox="0 0 64 48" aria-hidden="true">
+    <path d="M20 44 C 16 36, 26 32, 21 22 C 17 14, 24 10, 21 4"/>
+    <path d="M32 46 C 28 38, 38 32, 33 22 C 29 14, 36 10, 33 4"/>
+    <path d="M44 44 C 40 36, 50 32, 45 22 C 41 14, 48 10, 45 4"/>
+  </svg>
+  <div class="font-serif font-bold text-6xl tracking-tight">Antra</div>
+  <div class="logo-sub">BAKERY &amp; CAFE</div>
+  <div class="font-script text-2xl text-caramel mt-1">Baked Fresh. Made with Love.</div>
+</div>
+<script>/* safety net: never let the preloader get stuck */
+setTimeout(function(){var p=document.getElementById('preloader');if(p&&!p.classList.contains('done'))p.classList.add('hide-fallback')},2800);</script>
+
+<!-- Friendly fallback if something breaks (shown via JS) -->
+<div id="fatal" hidden class="fixed inset-x-0 top-0 z-[99] bg-cocoa text-cream px-5 py-3 text-center text-[13px]">
+  Some interactive features couldn't load — but ordering still works:
+  <a class="underline text-[#7fe3a4]" href="https://wa.me/918904477337">WhatsApp us</a> ·
+  <a class="underline text-[#E4C27E]" href="tel:+918904477337">Call 89044 77337</a>
+</div>
+
+<!-- Festival / occasion banner — toggle in DATA.festival below -->
+<div id="festivalBar" hidden class="fixed top-0 inset-x-0 z-[56] bg-caramel text-white text-center text-[12.5px] font-medium py-2 px-10"></div>
+
+<!-- Scroll progress -->
+<div id="progressBar" role="presentation"></div>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<header id="navbar">
+  <nav class="nav-inner max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4" aria-label="Main">
+    <a href="#home" class="flex items-center gap-3 group" aria-label="Antra Bakery — home">
+      <span class="w-11 h-11 rounded-full border-[1.5px] border-caramel grid place-items-center font-serif font-bold text-2xl text-[#E4C27E] group-hover:bg-caramel group-hover:text-white transition-colors">A</span>
+      <span class="leading-none">
+        <span class="font-serif font-bold text-[26px] text-cream transition-colors block" id="logoWord">Antra</span>
+        <span class="logo-sub block mt-0.5">BAKERY &amp; CAFE</span>
+      </span>
+    </a>
+    <ul class="hidden lg:flex items-center gap-7">
+      <li><a class="nav-link" data-link="home" href="#home">Home</a></li>
+      <li><a class="nav-link" data-link="menu" href="#menu">Menu</a></li>
+      <li><a class="nav-link" data-link="story" href="#story">Our Story</a></li>
+      <li><a class="nav-link" data-link="owner" href="#owner">Owner</a></li>
+      <li><a class="nav-link" data-link="reviews" href="#reviews">Reviews</a></li>
+      <li><a class="nav-link" data-link="gallery" href="#gallery">Gallery</a></li>
+      <li><a class="nav-link" data-link="visit" href="#visit">Find Us</a></li>
+    </ul>
+    <div class="flex items-center gap-3">
+      <span data-open-badge class="open-badge hidden md:inline-flex"></span>
+      <!-- Navbar "Order Now" → WhatsApp chat -->
+      <a href="https://wa.me/918904477337?text=Hello%20Antra%20Bakery!%20I'd%20like%20to%20know%20more." target="_blank" rel="noopener"
+         class="btn btn-wa !py-2.5 !px-5 !text-[13px] hidden sm:inline-flex magnetic">Order Now</a>
+      <button id="burger" class="burger lg:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile full-screen menu -->
+<div id="mobileMenu" aria-label="Mobile menu">
+  <div class="flex justify-between items-center">
+    <span class="font-serif font-bold text-3xl text-cream">Antra</span>
+    <button id="burgerClose" class="burger open !border-cream/40" aria-label="Close menu"><span></span><span></span></button>
+  </div>
+  <nav class="flex-1 flex flex-col justify-center">
+    <a class="m-link" href="#home"><i>01</i>Home</a>
+    <a class="m-link" href="#menu"><i>02</i>Menu</a>
+    <a class="m-link" href="#story"><i>03</i>Our Story</a>
+    <a class="m-link" href="#owner"><i>04</i>Owner</a>
+    <a class="m-link" href="#reviews"><i>05</i>Reviews</a>
+    <a class="m-link" href="#gallery"><i>06</i>Gallery</a>
+    <a class="m-link !border-0" href="#visit"><i>07</i>Find Us</a>
+  </nav>
+  <div class="flex items-center justify-center gap-3 pt-6" id="mobileContact"></div>
+</div>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section id="home" data-nav class="relative min-h-[100svh] flex items-center overflow-hidden">
+  <div id="heroBg" class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1920&q=78&auto=format&fit=crop"
+         onerror="this.onerror=null;this.src='https://picsum.photos/seed/antra-hero/1920/1080'"
+         alt="Fresh golden croissants and pastries at Antra Bakery" class="w-full h-full object-cover" fetchpriority="high" width="1920" height="1080">
+    <div class="absolute inset-0" style="background:linear-gradient(to bottom,rgba(42,24,16,.72),rgba(42,24,16,.45) 45%,rgba(42,24,16,.78))"></div>
+  </div>
+  <canvas id="dust" class="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true"></canvas>
+
+  <!-- floating decorative cutouts -->
+  <div aria-hidden="true" class="hidden lg:block absolute right-[8%] top-[20%] w-40 rounded-3xl overflow-hidden border border-cream/25 shadow-lift float-el" style="--r:5deg">
+    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=70&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/antra-f1/400/300'" alt="" width="400" height="300" class="w-full h-32 object-cover">
+  </div>
+  <div aria-hidden="true" class="hidden lg:block absolute right-[16%] bottom-[24%] w-32 rounded-3xl overflow-hidden border border-cream/25 shadow-lift float-el" style="--r:-7deg;animation-delay:1.6s">
+    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=360&q=70&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/antra-f2/360/270'" alt="" width="360" height="270" class="w-full h-28 object-cover">
+  </div>
+
+  <div id="heroContent" class="relative z-10 max-w-4xl mx-auto px-5 text-center pt-24 pb-28">
+    <p id="heroTag" class="font-script text-[clamp(1.6rem,3vw,2.3rem)] text-[#E4C27E] mb-4">Baked Fresh. Made with Love.</p>
+    <h1 id="heroH1" class="hero-h1">
+      <span class="word"><span class="word-in">Where</span></span>
+      <span class="word"><span class="word-in">Every</span></span>
+      <span class="word"><span class="word-in">Bite</span></span>
+      <span class="word"><span class="word-in">Feels</span></span>
+      <span class="word"><span class="word-in">Like</span></span>
+      <span class="word"><span class="word-in italic text-[#E4C27E]">Home.</span></span>
+    </h1>
+    <p id="heroSub" class="mt-6 text-cream/85 text-[15px] md:text-base leading-relaxed max-w-xl mx-auto">
+      Freshly baked cakes, pastries, breads and cafe favourites, made daily with love in Prathvipur Dhai.
+    </p>
+    <div id="heroCtas" class="mt-9 flex flex-wrap items-center justify-center gap-4">
+      <a href="https://wa.me/918904477337?text=Hello%20Antra%20Bakery!%20I'd%20like%20to%20know%20more." target="_blank" rel="noopener" class="btn btn-wa magnetic">Order on WhatsApp</a>
+      <a href="#menu" class="btn btn-gold magnetic">Explore Menu</a>
+    </div>
+    <div id="heroChips" class="mt-10 flex flex-wrap items-center justify-center gap-3">
+      <span class="trust-chip"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>4.8 Rating</span>
+      <span class="trust-chip"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/><path d="M2 21h20"/><path d="M7 8v3"/><path d="M12 8v3"/><path d="M17 8v3"/></svg>Custom Cakes</span>
+      <span class="trust-chip"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>Fresh Daily</span>
+      <span class="trust-chip"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>Local Delivery</span>
+    </div>
+  </div>
+
+  <a href="#bestsellers" class="absolute left-1/2 -translate-x-1/2 bottom-24 md:bottom-20 z-10 flex flex-col items-center gap-2 text-cream/70 text-[10px] tracking-[.3em] uppercase" aria-label="Scroll down">
+    <span class="scroll-cue"><i></i></span>
+  </a>
+  <div class="wave text-[#3B2418]"><svg viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0,64 L0,26 C240,62 480,2 760,24 C1040,46 1240,54 1440,18 L1440,64 Z"></path></svg></div>
+</section>
+
+<!-- ============================================================
+     MARQUEE
+============================================================ -->
+<div class="marquee bg-cocoa py-4 overflow-hidden border-y border-caramel/25" aria-label="What we bake">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<!-- ============================================================
+     BESTSELLERS / SIGNATURE PICKS
+============================================================ -->
+<section id="bestsellers" data-nav class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6">
+  <div class="flex flex-wrap items-end justify-between gap-6 mb-10">
+    <div data-reveal>
+      <span class="overline">Loved by Prathvipur Dhai</span>
+      <h2 class="h2 mt-4">Our <em class="italic text-caramel">Signature</em> Picks</h2>
+    </div>
+    <div class="hidden md:flex gap-3" data-reveal data-delay="0.15">
+      <button class="edge-btn" id="bsPrev" aria-label="Scroll bestsellers left"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button class="edge-btn" id="bsNext" aria-label="Scroll bestsellers right"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+  </div>
+  <div class="bs-wrap" data-reveal>
+    <div class="bs-track no-bar" id="bsTrack" data-lenis-prevent></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FULL MENU  (products rendered from DATA below)
+============================================================ -->
+<section id="menu" data-nav class="relative bg-beige/50 border-y border-cocoa/8 py-20 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center" data-reveal>
+      <span class="overline">Fresh Every Day</span>
+      <h2 class="h2 mt-4">Our Menu, <em class="italic text-caramel">Our Rates</em></h2>
+      <p class="mt-4 text-[14px] text-cocoa/65 max-w-lg mx-auto">Tap “Order on WhatsApp” on any item — we confirm freshness, price and pickup within minutes.</p>
+    </div>
+
+    <!-- search + filter chips -->
+    <div class="mt-10 flex flex-col md:flex-row items-stretch md:items-center gap-4 justify-between" data-reveal>
+      <div class="relative flex-1 max-w-md">
+        <svg class="w-4 h-4 absolute left-4 top-1/2 -translate-y-1/2 text-cocoa/45" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="menuSearch" type="search" placeholder="Search cakes, cookies, chai…" aria-label="Search the menu"
+               class="w-full bg-white/80 border border-cocoa/12 rounded-full pl-11 pr-4 py-3 text-[13.5px] placeholder:text-cocoa/40 focus:outline-none focus:border-caramel transition-colors">
+      </div>
+      <div class="flex flex-wrap gap-2.5" id="chipRow">
+        <button class="chip" data-chip="eggless">Eggless</button>
+        <button class="chip" data-chip="bestseller">Bestseller</button>
+        <button class="chip" data-chip="under100">Under ₹100</button>
+      </div>
+    </div>
+
+    <!-- sticky category tabs -->
+    <div id="menuTabsWrap" class="sticky top-16 z-40 -mx-4 sm:-mx-6 px-4 sm:px-6 mt-8 py-3 bg-[#F9EFDF]/90 backdrop-blur-md border-b border-cocoa/10">
+      <div id="menuTabs" class="relative flex gap-1 overflow-x-auto no-bar" role="tablist" aria-label="Menu categories">
+        <span class="tab-ink" id="tabInk" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <p class="mt-6 text-[12px] text-cocoa/55" id="menuCount" aria-live="polite"></p>
+    <div id="menuGrid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4"></div>
+
+    <p class="mt-10 text-center text-[12.5px] text-cocoa/55 italic">
+      Prices are indicative and may change. Message us on WhatsApp for confirmation.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     CUSTOM CAKE STUDIO
+============================================================ -->
+<section id="studio" data-nav class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6">
+  <div class="text-center" data-reveal>
+    <span class="overline">Custom Cake Studio</span>
+    <h2 class="h2 mt-4">Design Your <em class="italic text-caramel">Dream Cake</em></h2>
+    <p class="mt-4 text-[14px] text-cocoa/65 max-w-lg mx-auto">Pick your favourites below — we bake it your way and confirm everything on WhatsApp.</p>
+  </div>
+
+  <div class="mt-12 grid lg:grid-cols-[1.2fr,1fr] gap-10 items-start">
+    <!-- builder -->
+    <div class="bg-white/70 border border-cocoa/10 rounded-[28px] p-6 md:p-9 space-y-8" data-reveal>
+      <fieldset>
+        <legend class="text-[11px] font-semibold tracking-[.22em] uppercase text-cocoa/50 mb-3">Occasion</legend>
+        <div class="flex flex-wrap gap-2.5" id="ckOcc">
+          <button class="chip active" data-cake="occasion" data-val="Birthday">Birthday</button>
+          <button class="chip" data-cake="occasion" data-val="Anniversary">Anniversary</button>
+          <button class="chip" data-cake="occasion" data-val="Wedding">Wedding</button>
+          <button class="chip" data-cake="occasion" data-val="Custom">Custom</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="text-[11px] font-semibold tracking-[.22em] uppercase text-cocoa/50 mb-3">Flavour</legend>
+        <div class="flex flex-wrap gap-2.5" id="ckFlav"></div>
+      </fieldset>
+      <fieldset>
+        <legend class="text-[11px] font-semibold tracking-[.22em] uppercase text-cocoa/50 mb-3">Weight</legend>
+        <div class="flex flex-wrap gap-2.5" id="ckWt">
+          <button class="chip" data-cake="weight" data-val="500g">500g</button>
+          <button class="chip active" data-cake="weight" data-val="1kg">1kg</button>
+          <button class="chip" data-cake="weight" data-val="1.5kg">1.5kg</button>
+          <button class="chip" data-cake="weight" data-val="2kg">2kg</button>
+          <button class="chip" data-cake="weight" data-val="3kg">3kg</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend class="text-[11px] font-semibold tracking-[.22em] uppercase text-cocoa/50 mb-3">Type</legend>
+        <div class="flex flex-wrap gap-2.5" id="ckEgg">
+          <button class="chip active" data-cake="egg" data-val="Eggless">Eggless</button>
+          <button class="chip" data-cake="egg" data-val="With Egg">With Egg</button>
+        </div>
+      </fieldset>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <label class="block">
+          <span class="text-[11px] font-semibold tracking-[.22em] uppercase text-cocoa/50">Message on cake</span>
+          <input id="cakeMsg" type="text" maxlength="30" placeholder="e.g. Happy Birthday Aarav!"
+                 class="mt-2 w-full bg-white/80 border border-cocoa/12 rounded-2xl px-4 py-3 text-[13.5px] placeholder:text-cocoa/35 focus:outline-none focus:border-caramel">
+        </label>
+        <label class="block">
+          <span class="text-[11px] font-semibold tracking-[.22em] uppercase text-cocoa/50">Needed by</span>
+          <input id="cakeDate" type="date" class="mt-2 w-full bg-white/80 border border-cocoa/12 rounded-2xl px-4 py-3 text-[13.5px] text-cocoa/75 focus:outline-none focus:border-caramel">
+        </label>
+      </div>
+    </div>
+
+    <!-- live preview -->
+    <aside class="bg-cocoa text-cream rounded-[28px] p-7 md:p-9 shadow-lift lg:sticky lg:top-28" data-reveal data-delay="0.15">
+      <p class="font-script text-3xl text-[#E4C27E]">Your custom cake</p>
+      <h3 class="font-serif font-bold text-2xl mt-1" id="pvTitle">Birthday · Chocolate Truffle</h3>
+      <div class="h-px bg-caramel/40 my-5"></div>
+      <dl class="space-y-3 text-[13.5px]">
+        <div class="flex justify-between gap-4"><dt class="text-cream/55">Weight</dt><dd class="font-medium" id="pvWeight">1kg</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-cream/55">Type</dt><dd class="font-medium" id="pvType">Eggless</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-cream/55">Message</dt><dd class="font-medium text-right" id="pvMsg">—</dd></div>
+        <div class="flex justify-between gap-4"><dt class="text-cream/55">Needed by</dt><dd class="font-medium" id="pvDate">Flexible</dd></div>
+      </dl>
+      <div class="h-px bg-caramel/40 my-5"></div>
+      <div class="flex items-baseline justify-between">
+        <span class="text-[12px] text-cream/55">Approx. price</span>
+        <span class="font-serif font-extrabold text-3xl text-[#E4C27E]" id="pvPrice">₹850</span>
+      </div>
+      <p class="text-[11px] text-cream/45 mt-1.5">Final price confirmed on WhatsApp.</p>
+      <button class="btn btn-wa w-full mt-6" data-act="cake-order" id="cakeOrderBtn">Order Custom Cake on WhatsApp</button>
+    </aside>
+  </div>
+</section>
+
+<!-- ============================================================
+     OUR STORY + WHY + STATS + STEPS
+============================================================ -->
+<section id="story" data-nav class="py-20 md:py-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+      <!-- collage -->
+      <div class="relative pb-12 pr-8" data-reveal="left">
+        <div class="rounded-[28px] overflow-hidden shadow-lift">
+          <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=900&q=72&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/antra-story/900/680'"
+               alt="Fresh rustic breads cooling in the Antra Bakery kitchen" class="w-full h-[340px] sm:h-[420px] object-cover" width="900" height="680" loading="lazy" decoding="async" id="storyImg1">
+        </div>
+        <div class="absolute -bottom-0 right-0 w-44 sm:w-56 rounded-3xl overflow-hidden border-[5px] border-cream shadow-lift" data-parallax="0.12">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=480&q=70&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/antra-story2/480/360'"
+               alt="Butter croissants fresh from the oven" class="w-full h-32 sm:h-40 object-cover" width="480" height="360" loading="lazy" decoding="async">
+        </div>
+        <div class="absolute -top-5 -left-3 sm:-left-5 w-24 h-24 rounded-full bg-cocoa text-cream grid place-items-center text-center shadow-lift" data-parallax="-0.08">
+          <span class="leading-tight"><span class="block font-serif font-bold text-lg text-[#E4C27E]">EST.</span><span class="block font-serif font-bold text-2xl text-[#E4C27E]">2019</span></span>
+        </div>
+      </div>
+
+      <!-- story text -->
+      <div data-reveal="right">
+        <span class="overline">Our Story</span>
+        <h2 class="h2 mt-4">A Little Oven with a <em class="italic text-caramel">Big Heart</em></h2>
+        <!-- EDIT: your brand story text here -->
+        <p class="mt-6 text-[14.5px] leading-relaxed text-cocoa/75">
+          Antra Bakery began in a small home kitchen in Prathvipur Dhai — one oven, a family recipe book, and a belief that good food, made with patience, can brighten anyone's day.
+        </p>
+        <p class="mt-4 text-[14.5px] leading-relaxed text-cocoa/75">
+          Today, our ovens warm up before sunrise. Cakes are creamed by hand, breads are pulled out golden, and chai is always on the stove. Every order — big or small — leaves our counter only when it's something we'd proudly serve our own family.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#menu" class="btn btn-dark magnetic">See the Menu</a>
+          <a href="https://wa.me/918904477337?text=Hello%20Antra%20Bakery!%20I'd%20like%20to%20know%20more." target="_blank" rel="noopener" class="btn btn-gold !text-cocoa !border-caramel/70 !bg-transparent magnetic">Say Hello</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- stats -->
+    <div class="mt-20 md:mt-28 bg-cocoa rounded-[28px] px-6 py-10 md:py-12 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center text-cream shadow-lift" data-reveal>
+      <!-- EDIT: your stats here -->
+      <div><span class="block font-serif font-extrabold text-4xl md:text-5xl text-[#E4C27E]" data-count="5" data-suffix="+">0</span><span class="text-[12px] tracking-wide text-cream/65 mt-2 block">Years of Baking</span></div>
+      <div><span class="block font-serif font-extrabold text-4xl md:text-5xl text-[#E4C27E]" data-count="10000" data-suffix="+">0</span><span class="text-[12px] tracking-wide text-cream/65 mt-2 block">Happy Customers</span></div>
+      <div><span class="block font-serif font-extrabold text-4xl md:text-5xl text-[#E4C27E]" data-count="50" data-suffix="+">0</span><span class="text-[12px] tracking-wide text-cream/65 mt-2 block">Items on the Menu</span></div>
+      <div><span class="block font-serif font-extrabold text-4xl md:text-5xl text-[#E4C27E]" data-count="100" data-suffix="%">0</span><span class="text-[12px] tracking-wide text-cream/65 mt-2 block">Fresh Daily</span></div>
+    </div>
+
+    <!-- why choose us -->
+    <div class="mt-20 md:mt-24">
+      <div class="text-center" data-reveal>
+        <span class="overline">Why Antra</span>
+        <h2 class="h2 mt-4">Why Prathvipur Dhai <em class="italic text-caramel">Keeps Coming Back</em></h2>
+      </div>
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-reveal-group>
+        <div class="why-card"><span class="why-ic"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span><h3 class="font-serif font-bold text-lg mt-4">Baked Fresh Daily</h3><p class="text-[13px] text-cocoa/65 mt-2 leading-relaxed">Our ovens start at 5 AM. Nothing sits overnight — you taste the difference.</p></div>
+        <div class="why-card"><span class="why-ic"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg></span><h3 class="font-serif font-bold text-lg mt-4">Premium Ingredients</h3><p class="text-[13px] text-cocoa/65 mt-2 leading-relaxed">Real butter, quality cocoa and fresh dairy — never shortcuts, never compromises.</p></div>
+        <div class="why-card"><span class="why-ic"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span><h3 class="font-serif font-bold text-lg mt-4">Eggless Options</h3><p class="text-[13px] text-cocoa/65 mt-2 leading-relaxed">Almost every cake and pastry is available eggless — just say the word.</p></div>
+        <div class="why-card"><span class="why-ic"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1"/><path d="M2 21h20"/><path d="M7 8v3"/><path d="M12 8v3"/><path d="M17 8v3"/></svg></span><h3 class="font-serif font-bold text-lg mt-4">Custom Designs</h3><p class="text-[13px] text-cocoa/65 mt-2 leading-relaxed">Photo cakes, theme cakes, wedding tiers — tell us the dream, we'll bake it.</p></div>
+        <div class="why-card"><span class="why-ic"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></span><h3 class="font-serif font-bold text-lg mt-4">Hygienic Kitchen</h3><p class="text-[13px] text-cocoa/65 mt-2 leading-relaxed">Clean counters, gloved hands, sealed packing — safety you can trust.</p></div>
+        <div class="why-card"><span class="why-ic"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><h3 class="font-serif font-bold text-lg mt-4">On-time Service</h3><p class="text-[13px] text-cocoa/65 mt-2 leading-relaxed">Birthday at 7? Your cake is packed and ready by 6:45. Every single time.</p></div>
+      </div>
+    </div>
+
+    <!-- how to order -->
+    <div class="mt-20 md:mt-24">
+      <div class="text-center" data-reveal>
+        <span class="overline">Simple as 1-2-3</span>
+        <h2 class="h2 mt-4">How to <em class="italic text-caramel">Order</em></h2>
+      </div>
+      <div class="mt-12 grid md:grid-cols-3 gap-6 relative" data-reveal-group>
+        <div class="why-card text-center relative">
+          <span class="step-num">01</span>
+          <h3 class="font-serif font-bold text-lg mt-2">Choose</h3>
+          <p class="text-[13px] text-cocoa/65 mt-2">Browse the menu, pick a size and quantity — or design a custom cake.</p>
+        </div>
+        <div class="why-card text-center">
+          <span class="step-num">02</span>
+          <h3 class="font-serif font-bold text-lg mt-2">Tap WhatsApp</h3>
+          <p class="text-[13px] text-cocoa/65 mt-2">Your order is pre-written in the message. Just hit send — no apps, no sign-up.</p>
+        </div>
+        <div class="why-card text-center">
+          <span class="step-num">03</span>
+          <h3 class="font-serif font-bold text-lg mt-2">Pick up / Delivery</h3>
+          <p class="text-[13px] text-cocoa/65 mt-2">We confirm in minutes. Collect from the bakery or get it delivered locally.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MEET THE OWNER  (EDIT: photo / name / story below)
+============================================================ -->
+<section id="owner" data-nav class="on-dark relative bg-cocoa text-cream py-20 md:py-28 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-[0.9fr,1.1fr] gap-14 lg:gap-20 items-center">
+    <!-- portrait slot: replace /images/owner.jpg (auto-falls back if missing) -->
+    <div class="arch-frame max-w-md mx-auto lg:mx-0 w-full" data-reveal="left">
+      <div class="arch shadow-lift" data-parallax="0.08">
+        <img id="ownerImg" src="/images/owner.jpg"
+             alt="Portrait of Atul Kumar, Founder &amp; Head Baker of Antra Bakery"
+             class="w-full h-[440px] sm:h-[540px] object-cover" width="700" height="860" loading="lazy" decoding="async">
+      </div>
+      <span class="absolute -bottom-4 left-8 bg-caramel text-white text-[11px] font-semibold tracking-[.18em] uppercase px-4 py-2 rounded-full shadow-lift z-10">The Hands Behind the Oven</span>
+    </div>
+
+    <div data-reveal="right">
+      <span class="overline">Meet the Owner</span>
+      <!-- EDIT: owner name -->
+      <h2 class="font-serif font-bold text-[clamp(2.2rem,4.4vw,3.4rem)] leading-tight mt-4">Atul Kumar</h2>
+      <p class="text-caramel font-medium text-[14px] tracking-wide mt-1">Founder &amp; Head Baker, Antra Bakery</p>
+
+      <!-- EDIT: owner's personal story -->
+      <p class="mt-6 text-[14.5px] leading-relaxed text-cream/75">
+        I still remember my first tray of burnt biscuits and the neighbours who ate them anyway, smiling. That kindness is why Antra exists. What began as weekend experiments in a Prathvipur Dhai kitchen slowly became morning bakes for the whole town.
+      </p>
+      <p class="mt-4 text-[14.5px] leading-relaxed text-cream/75">
+        For me, every cake that leaves this counter carries a piece of my family's recipes — and a promise that it was made slowly, honestly, and with far too much love.
+      </p>
+
+      <blockquote class="mt-8 relative pl-6 border-l-2 border-caramel">
+        <p class="pull-quote">"Baking is my way of sharing happiness."</p>
+      </blockquote>
+      <p class="font-script text-4xl text-[#E4C27E] mt-3">— Atul</p>
+
+      <div class="mt-8 grid grid-cols-3 gap-5">
+        <!-- EDIT: owner highlights -->
+        <div class="hl-item"><span class="block font-serif font-bold text-xl text-[#E4C27E]">10+ yrs</span><span class="text-[11.5px] text-cream/60 leading-snug block mt-1">of baking experience</span></div>
+        <div class="hl-item"><span class="block font-serif font-bold text-xl text-[#E4C27E]">Custom</span><span class="text-[11.5px] text-cream/60 leading-snug block mt-1">cake specialist</span></div>
+        <div class="hl-item"><span class="block font-serif font-bold text-xl text-[#E4C27E]">Always</span><span class="text-[11.5px] text-cream/60 leading-snug block mt-1">fresh, honest &amp; on time</span></div>
+      </div>
+
+      <div class="mt-9 flex flex-wrap gap-3.5">
+        <a href="https://instagram.com/atulk.ush" target="_blank" rel="noopener" class="btn btn-ig magnetic">
+          <svg class="w-4.5 h-4.5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Follow @atulk.ush</a>
+        <a href="https://wa.me/918904477337?text=Hello%20Antra%20Bakery!%20I'd%20like%20to%20know%20more." target="_blank" rel="noopener" class="btn btn-wa magnetic">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <div class="wave text-cream"><svg viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0,64 L0,26 C240,62 480,2 760,24 C1040,46 1240,54 1440,18 L1440,64 Z"></path></svg></div>
+</section>
+
+<!-- ============================================================
+     REVIEWS  (SAMPLE DATA — replace in DATA.reviews)
+============================================================ -->
+<section id="reviews" data-nav class="py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center" data-reveal>
+      <span class="overline">Reviews</span>
+      <h2 class="h2 mt-4">Word Around <em class="italic text-caramel">the Oven</em></h2>
+    </div>
+
+    <div class="mt-12 grid lg:grid-cols-[320px,1fr] gap-10 items-start">
+      <!-- summary -->
+      <div class="bg-white/70 border border-cocoa/10 rounded-[26px] p-7 text-center lg:text-left" data-reveal>
+        <span class="font-serif font-extrabold text-6xl">4.8</span><span class="text-2xl text-cocoa/40 font-serif">/5</span>
+        <div class="flex justify-center lg:justify-start mt-2" id="sumStars"></div>
+        <p class="text-[12px] text-cocoa/55 mt-2">Based on 240+ happy reviews</p>
+        <div class="mt-6 space-y-2.5 text-[11.5px]" id="ratingBars"></div>
+      </div>
+
+      <!-- carousel -->
+      <div data-reveal data-delay="0.15">
+        <div class="flex justify-end gap-3 mb-5">
+          <button class="edge-btn" id="revPrev" aria-label="Previous reviews"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button class="edge-btn" id="revNext" aria-label="Next reviews"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+        </div>
+        <div class="bs-wrap">
+          <div class="bs-track !cursor-default" id="revTrack" data-lenis-prevent></div>
+        </div>
+        <p class="text-[12px] text-cocoa/45 italic mt-2 text-right">Swipe to read more →</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY  (EDIT: images in DATA.gallery)
+============================================================ -->
+<section id="gallery" data-nav class="py-20 md:py-24 bg-beige/50 border-y border-cocoa/8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center" data-reveal>
+      <span class="overline">Gallery</span>
+      <h2 class="h2 mt-4">Fresh From <em class="italic text-caramel">Our Kitchen</em></h2>
+    </div>
+    <div id="galleryGrid" class="mt-12 columns-2 md:columns-3 lg:columns-4" data-reveal></div>
+    <div class="text-center mt-8" data-reveal>
+      <a href="https://instagram.com/atulk.ush" target="_blank" rel="noopener" class="btn btn-dark magnetic">
+        See more on Instagram
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     VISIT US / FIND US
+============================================================ -->
+<section id="visit" data-nav class="py-20 md:py-28 max-w-7xl mx-auto px-4 sm:px-6">
+  <div class="text-center" data-reveal>
+    <span class="overline">Find Us</span>
+    <h2 class="h2 mt-4">Come, <em class="italic text-caramel">Say Hello</em></h2>
+  </div>
+
+  <div class="mt-12 grid lg:grid-cols-2 gap-8 items-stretch">
+    <!-- info + the ONLY four contact tiles -->
+    <div class="flex flex-col gap-6" data-reveal="left">
+      <div class="bg-white/70 border border-cocoa/10 rounded-[26px] p-7">
+        <div class="flex items-start gap-4">
+          <span class="tile-ic shrink-0"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div>
+            <h3 class="font-serif font-bold text-lg">Antra Bakery &amp; Cafe</h3>
+            <!-- EDIT: address text -->
+            <p class="text-[13.5px] text-cocoa/65 mt-1.5 leading-relaxed">Prathvipur Dhai, Uttar Pradesh, India</p>
+            <a href="https://www.google.com/maps/place/Prathvipur+Dhai/@27.6189698,79.5507445,17z/data=!3m1!4b1!4m6!3m5!1s0x399fd3dc66d4d7d5:0x25ec81828ad2138a!8m2!3d27.6189651!4d79.5533194!16s%2Fg%2F11rj5t3f2h?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-[12.5px] font-medium text-gold-ink hover:underline mt-2">Open in Google Maps ↗</a>
+          </div>
+        </div>
+        <div class="h-px bg-cocoa/10 my-5"></div>
+        <div class="flex items-start justify-between gap-4 flex-wrap">
+          <div class="flex items-start gap-4">
+            <span class="tile-ic shrink-0"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+            <div>
+              <h3 class="font-serif font-bold text-lg">Opening Hours</h3>
+              <!-- EDIT: opening hours text -->
+              <p class="text-[13.5px] text-cocoa/65 mt-1.5">Monday – Sunday · 8:00 AM – 10:00 PM</p>
+            </div>
+          </div>
+          <span data-open-badge class="open-badge"></span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4" data-reveal-group>
+        <a href="tel:+918904477337" class="tile">
+          <span class="tile-ic"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <span class="font-serif font-bold">Call Us</span>
+          <span class="text-[12.5px] text-cocoa/60">89044 77337</span>
+        </a>
+        <a href="https://wa.me/918904477337?text=Hello%20Antra%20Bakery!%20I'd%20like%20to%20know%20more." target="_blank" rel="noopener" class="tile tile--wa">
+          <span class="tile-ic"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></span>
+          <span class="font-serif font-bold">WhatsApp</span>
+          <span class="text-[12.5px] text-cocoa/60">Chat &amp; order instantly</span>
+        </a>
+        <a href="https://instagram.com/atulk.ush" target="_blank" rel="noopener" class="tile">
+          <span class="tile-ic"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+          <span class="font-serif font-bold">Instagram</span>
+          <span class="text-[12.5px] text-cocoa/60">@atulk.ush</span>
+        </a>
+        <a href="https://www.google.com/maps/place/Prathvipur+Dhai/@27.6189698,79.5507445,17z/data=!3m1!4b1!4m6!3m5!1s0x399fd3dc66d4d7d5:0x25ec81828ad2138a!8m2!3d27.6189651!4d79.5533194!16s%2Fg%2F11rj5t3f2h?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="tile">
+          <span class="tile-ic"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <span class="font-serif font-bold">Location</span>
+          <span class="text-[12.5px] text-cocoa/60">Get directions</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- map -->
+    <div class="rounded-[26px] overflow-hidden border border-cocoa/10 shadow-card min-h-[380px]" data-reveal="right">
+      <iframe src="https://maps.google.com/maps?q=27.6189651,79.5533194&z=16&output=embed" title="Map — Antra Bakery, Prathvipur Dhai" class="w-full h-full min-h-[380px]" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section class="py-20 md:py-24 bg-beige/50 border-y border-cocoa/8">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <div class="text-center" data-reveal>
+      <span class="overline">FAQ</span>
+      <h2 class="h2 mt-4">Good to <em class="italic text-caramel">Know</em></h2>
+    </div>
+    <div id="faqList" class="mt-10 space-y-4" data-reveal></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA + FOOTER
+============================================================ -->
+<section class="relative py-24 md:py-32 overflow-hidden">
+  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1600&q=70&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://picsum.photos/seed/antra-cta/1600/700'" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="1600" height="700">
+  <div class="absolute inset-0 bg-cocoa/88"></div>
+  <div class="relative max-w-3xl mx-auto px-5 text-center text-cream" data-reveal>
+    <p class="font-script text-3xl text-[#E4C27E]">Still thinking about it?</p>
+    <h2 class="h2 !text-cream mt-3">Craving Something Sweet?</h2>
+    <p class="mt-4 text-cream/75 text-[14.5px]">Your next favourite cake is one message away. Send your order now — we'll take care of the rest.</p>
+    <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="https://wa.me/918904477337?text=Hello%20Antra%20Bakery!%20I'd%20like%20to%20know%20more." target="_blank" rel="noopener" class="btn btn-wa !text-base !px-9 !py-4 magnetic">Order Now on WhatsApp</a>
+      <a href="tel:+918904477337" class="text-cream/80 text-[14px] underline underline-offset-4 hover:text-cream">or call 89044 77337</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-cocoa-deep text-cream/80">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid gap-12 md:grid-cols-2 lg:grid-cols-[1.4fr,1fr,1fr,1.2fr]">
+    <div>
+      <div class="flex items-center gap-3">
+        <span class="w-11 h-11 rounded-full border-[1.5px] border-caramel grid place-items-center font-serif font-bold text-2xl text-[#E4C27E]">A</span>
+        <span class="leading-none"><span class="font-serif font-bold text-2xl text-cream block">Antra</span><span class="logo-sub">BAKERY &amp; CAFE</span></span>
+      </div>
+      <p class="font-script text-2xl text-[#E4C27E] mt-5">Baked Fresh. Made with Love.</p>
+      <p class="text-[13px] text-cream/55 mt-2 leading-relaxed max-w-xs">Freshly baked cakes, pastries, breads and cafe favourites from Prathvipur Dhai, made daily with love.</p>
+      <div class="flex gap-3 mt-6" id="footerSocial"></div>
+    </div>
+    <nav aria-label="Footer quick links">
+      <h3 class="text-[11px] font-semibold tracking-[.24em] uppercase text-caramel mb-5">Explore</h3>
+      <ul class="space-y-3 text-[13.5px]">
+        <li><a class="hover:text-cream transition-colors" href="#home">Home</a></li>
+        <li><a class="hover:text-cream transition-colors" href="#menu">Menu &amp; Rates</a></li>
+        <li><a class="hover:text-cream transition-colors" href="#studio">Custom Cakes</a></li>
+        <li><a class="hover:text-cream transition-colors" href="#story">Our Story</a></li>
+        <li><a class="hover:text-cream transition-colors" href="#gallery">Gallery</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h3 class="text-[11px] font-semibold tracking-[.24em] uppercase text-caramel mb-5">Hours</h3>
+      <p class="text-[13.5px] leading-relaxed">Monday – Sunday<br>8:00 AM – 10:00 PM</p>
+      <span data-open-badge class="open-badge mt-4"></span>
+    </div>
+    <div>
+      <h3 class="text-[11px] font-semibold tracking-[.24em] uppercase text-caramel mb-5">Reach Us</h3>
+      <ul class="space-y-3.5 text-[13.5px]" id="footerContact"></ul>
+    </div>
+  </div>
+  <div class="border-t border-cream/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] text-cream/45">
+      <span>© 2026 Antra Bakery. All rights reserved.</span>
+      <span>Baked fresh daily in Prathvipur Dhai, Uttar Pradesh.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     FLOATING CONTACT DOCK (Call · WhatsApp · Instagram · Map)
+============================================================ -->
+<!-- Desktop: vertical glass dock -->
+<nav class="dock-v" aria-label="Quick contact">
+  <a href="tel:+918904477337" aria-label="Call 89044 77337"><span class="tip">Call 89044 77337</span><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+  <a class="dock-wa" href="https://wa.me/918904477337?text=Hello%20Antra%20Bakery!%20I'd%20like%20to%20know%20more." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><span class="tip">WhatsApp Chat</span><svg class="w-5 h-5" style="color:#25D366" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+  <a href="https://instagram.com/atulk.ush" target="_blank" rel="noopener" aria-label="Instagram — atulk.ush"><span class="tip">Instagram @atulk.ush</span><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+  <a href="https://www.google.com/maps/place/Prathvipur+Dhai/@27.6189698,79.5507445,17z/data=!3m1!4b1!4m6!3m5!1s0x399fd3dc66d4d7d5:0x25ec81828ad2138a!8m2!3d27.6189651!4d79.5533194!16s%2Fg%2F11rj5t3f2h?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" aria-label="Find us on Google Maps"><span class="tip">Find us on the map</span><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
+</nav>
+<!-- Mobile: bottom bar with safe-area padding -->
+<nav class="dock-b" aria-label="Quick contact">
+  <a href="tel:+918904477337"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</a>
+  <a class="wa-c" href="https://wa.me/918904477337?text=Hello%20Antra%20Bakery!%20I'd%20like%20to%20know%20more." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>WhatsApp</a>
+  <a href="https://instagram.com/atulk.ush" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>Instagram</a>
+  <a href="https://www.google.com/maps/place/Prathvipur+Dhai/@27.6189698,79.5507445,17z/data=!3m1!4b1!4m6!3m5!1s0x399fd3dc66d4d7d5:0x25ec81828ad2138a!8m2!3d27.6189651!4d79.5533194!16s%2Fg%2F11rj5t3f2h?entry=ttu&g_ep=EgoyMDI2MDkyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Map</a>
+</nav>
+
+<!-- Basket FAB + back to top -->
+<button id="basketFab" aria-label="Open your basket">
+  <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+  <span class="badge-n" id="basketBadge">0</span>
+</button>
+<button id="backTop" aria-label="Back to top">
+  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<!-- Basket / Wishlist drawer -->
+<div id="drawerScrim"></div>
+<aside id="drawer" aria-label="Your basket" role="dialog" aria-modal="true">
+  <div class="flex items-center justify-between gap-3 p-5 border-b border-cocoa/10">
+    <div class="flex gap-2 bg-beige/60 p-1 rounded-2xl flex-1">
+      <button class="d-tab active" data-act="dtab" data-tab="basket" id="tabBtnBasket">Basket</button>
+      <button class="d-tab" data-act="dtab" data-tab="wish">Saved</button>
+    </div>
+    <button class="icon-btn" data-act="close-drawer" aria-label="Close basket"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  </div>
+  <div id="drawerBody" class="flex-1 overflow-y-auto p-5 space-y-3" data-lenis-prevent></div>
+  <div class="p-5 border-t border-cocoa/10 bg-beige/40" id="drawerFoot"></div>
+</aside>
+
+<!-- Quick view modal -->
+<div id="quickModal" role="dialog" aria-modal="true" aria-label="Product details">
+  <div class="qm-back" data-act="close-quick"></div>
+  <div class="qm-card" id="qmCard" data-id data-v data-q></div>
+</div>
+
+<!-- Gallery lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery image">
+  <div class="qm-back" data-act="close-lb"></div>
+  <div class="relative z-10 max-w-4xl w-full">
+    <img id="lbImg" src="" alt="" class="max-h-[76vh] w-auto mx-auto rounded-2xl shadow-lift" >
+    <p id="lbCap" class="text-center text-cream/85 text-[13.5px] mt-4"></p>
+    <p id="lbCount" class="text-center text-cream/45 text-[11px] mt-1 tracking-widest"></p>
+    <button class="edge-btn !bg-cocoa/70 !text-cream !border-cream/25 absolute left-2 top-1/2 -translate-y-1/2" data-act="lb-prev" aria-label="Previous image"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <button class="edge-btn !bg-cocoa/70 !text-cream !border-cream/25 absolute right-2 top-1/2 -translate-y-1/2" data-act="lb-next" aria-label="Next image"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+    <button class="edge-btn !bg-cocoa/70 !text-cream !border-cream/25 absolute right-2 -top-12" data-act="close-lb" aria-label="Close gallery"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+  </div>
+</div>
+
+<!-- Toasts + confetti + cursor -->
+<div id="toasts" aria-live="polite"></div>
+<canvas id="confetti" class="fixed inset-0 z-[95] pointer-events-none"></canvas>
+<div id="cursorGlow" aria-hidden="true"></div>
+
+<!-- Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script>
+/* ══════════════════════════════════════════════════════════════
+   ANTRA BAKERY — APP SCRIPT
+   ▼▼▼ ALL OWNER-EDITABLE DATA LIVES IN THIS ONE BLOCK ▼▼▼
+══════════════════════════════════════════════════════════════ */
+const DATA = {
+
+  /* ---------- Business basics ---------- */
+  phoneDisplay: '89044 77337',
+  phoneHref: 'tel:+918904477337',
+  waChat: "https://wa.me/918904477337?text=Hello%20Antra%20Bakery!%20I'd%20like%20to%20know%20more.",
+
+  /* ---------- EDIT: Opening hours (24h clock, used for the live "Open now" badge) ---------- */
+  hours: { open: 8, close: 22, display: '8:00 AM – 10:00 PM' },
+
+  /* ---------- EDIT: Festival / occasion banner — set to e.g.
+     { title: 'Diwali Special: Gift Hampers & Custom Cakes are here!' }
+     to switch it on, or leave null to hide it. ---------- */
+  festival: null,
+
+  /* ---------- EDIT: FULL PRODUCT CATALOG (prices in ₹) ----------
+     variants: [label, price]. flags: today (Today's Fresh), limited (Limited stock) */
+  products: [
+    /* CAKES */
+    { id:'choco-truffle', name:'Chocolate Truffle Cake', cat:'Cakes', desc:'Rich dark chocolate layers with a silky ganache finish.', badges:['Bestseller','Eggless'], rating:4.9, variants:[['500g',450],['1kg',850]], img:'1578985545062-69928b1d9587' },
+    { id:'black-forest', name:'Black Forest Cake', cat:'Cakes', desc:'Cherry-filled chocolate sponge with clouds of whipped cream.', badges:['Bestseller'], rating:4.8, variants:[['500g',400],['1kg',750]], img:'1464349095431-e9a21285b5f3' },
+    { id:'butterscotch-cake', name:'Butterscotch Cake', cat:'Cakes', desc:'Caramel crunch praline layered with soft vanilla cream.', badges:['Eggless'], rating:4.7, variants:[['500g',420],['1kg',780]], img:'1488477181946-6428a0291777', today:true },
+    { id:'pineapple-cake', name:'Pineapple Cake', cat:'Cakes', desc:'Juicy pineapple chunks folded into light fresh cream.', badges:['Eggless'], rating:4.7, variants:[['500g',380],['1kg',700]], img:'1484723091739-30a097e8f929' },
+    { id:'red-velvet-cake', name:'Red Velvet Cake', cat:'Cakes', desc:'Velvet-soft crimson layers with cream cheese frosting.', badges:['Bestseller'], rating:4.9, variants:[['500g',550],['1kg',1000]], img:'1565958011703-44f9829ba187' },
+    { id:'fresh-fruit-cake', name:'Fresh Fruit Cake', cat:'Cakes', desc:'Seasonal garden fruits piled on feather-light cream.', badges:['Eggless'], rating:4.8, variants:[['500g',500],['1kg',950]], img:'1504754524776-8f4f37790ca0' },
+    { id:'rasmalai-cake', name:'Rasmalai Cake', cat:'Cakes', desc:'Our fusion favourite — soft rasmalai soaked in saffron milk.', badges:['New','Eggless'], rating:4.9, variants:[['500g',650],['1kg',1200]], img:'1565958011703-44f9829ba187', limited:true },
+    { id:'kitkat-cake', name:'Kit Kat Gems Cake', cat:'Cakes', desc:'Chocolate-loaded fun cake covered in Kit Kat & Gems.', badges:[], rating:4.8, variants:[['500g',600],['1kg',1100]], img:'1551024506-0bccd828d307' },
+
+    /* PASTRIES */
+    { id:'choco-pastry', name:'Chocolate Pastry', cat:'Pastries', desc:'The classic — moist chocolate sponge, glossy ganache.', badges:['Bestseller'], rating:4.9, variants:[['1 pc',60]], img:'1578985545062-69928b1d9587' },
+    { id:'pineapple-pastry', name:'Pineapple Pastry', cat:'Pastries', desc:'Sweet, tangy and light — a teatime classic.', badges:['Eggless'], rating:4.6, variants:[['1 pc',50]], img:'1484723091739-30a097e8f929' },
+    { id:'bf-pastry', name:'Black Forest Pastry', cat:'Pastries', desc:'Mini version of the crowd favourite.', badges:[], rating:4.7, variants:[['1 pc',55]], img:'1464349095431-e9a21285b5f3' },
+    { id:'butterscotch-pastry', name:'Butterscotch Pastry', cat:'Pastries', desc:'Crunchy praline meets velvety cream.', badges:['Eggless'], rating:4.6, variants:[['1 pc',55]], img:'1488477181946-6428a0291777' },
+    { id:'rv-pastry', name:'Red Velvet Pastry', cat:'Pastries', desc:'A little luxury, one slice at a time.', badges:[], rating:4.8, variants:[['1 pc',80]], img:'1565958011703-44f9829ba187' },
+
+    /* BREADS & BUNS */
+    { id:'milk-bread', name:'Milk Bread', cat:'Breads & Buns', desc:'Soft, pillowy and perfect for breakfast toast.', badges:['Eggless','Veg'], rating:4.8, variants:[['400g',40]], img:'1517433670267-08bbd4be890f' },
+    { id:'brown-bread', name:'Brown Bread', cat:'Breads & Buns', desc:'Wholesome wheat, baked golden every morning.', badges:['Eggless','Veg'], rating:4.7, variants:[['400g',50]], img:'1586444248902-2f64eddc13df' },
+    { id:'garlic-bread', name:'Garlic Bread', cat:'Breads & Buns', desc:'Buttery, garlicky and dangerously aromatic.', badges:['Veg'], rating:4.8, variants:[['1 loaf',80]], img:'1482049016688-2d3e1b311543' },
+    { id:'burger-buns', name:'Burger Buns', cat:'Breads & Buns', desc:'Sesame-topped, bakery soft — 4 pieces.', badges:['Eggless','Veg'], rating:4.7, variants:[['4 pcs',40]], img:'1555507036-ab1f4038808a' },
+    { id:'pav', name:'Pav', cat:'Breads & Buns', desc:'Feather-light pav for your bhaji evenings — 6 pieces.', badges:['Eggless','Veg'], rating:4.8, variants:[['6 pcs',30]], img:'1549931319-a545dcf3bc73' },
+
+    /* COOKIES & BISCUITS (per 250g) */
+    { id:'butter-cookies', name:'Butter Cookies', cat:'Cookies & Biscuits', desc:'Melt-in-mouth buttery goodness.', badges:['Eggless','Bestseller'], rating:4.8, variants:[['250g',150]], img:'1499636136210-6f4ee915583e' },
+    { id:'choco-chip', name:'Choco Chip Cookies', cat:'Cookies & Biscuits', desc:'Loaded with chocolate chips in every bite.', badges:['Bestseller'], rating:4.9, variants:[['250g',180]], img:'1606313564200-e75d5e30476c' },
+    { id:'jeera-biscuit', name:'Jeera Biscuit', cat:'Cookies & Biscuits', desc:'Savoury, crisp and perfectly spiced.', badges:['Eggless','Veg'], rating:4.6, variants:[['250g',120]], img:'1499636136210-6f4ee915583e' },
+    { id:'coconut-cookies', name:'Coconut Cookies', cat:'Cookies & Biscuits', desc:'Chewy coconut, gently sweetened.', badges:['Eggless'], rating:4.6, variants:[['250g',140]], img:'1499636136210-6f4ee915583e' },
+    { id:'rusk', name:'Rusk', cat:'Cookies & Biscuits', desc:'Twice-baked and crunchy — best with chai.', badges:['Eggless','Veg'], rating:4.7, variants:[['250g',100]], img:'1509365465985-25d11c17e812' },
+
+    /* CUPCAKES & MUFFINS */
+    { id:'choco-cupcake', name:'Chocolate Cupcake', cat:'Cupcakes & Muffins', desc:'Little dome of chocolate happiness.', badges:['Veg'], rating:4.7, variants:[['1 pc',40]], img:'1614707267537-b85aaf00c4b7' },
+    { id:'vanilla-cupcake', name:'Vanilla Cupcake', cat:'Cupcakes & Muffins', desc:'Soft vanilla sponge with swirled frosting.', badges:['Eggless','Veg'], rating:4.6, variants:[['1 pc',35]], img:'1599785209707-a456fc1337bb' },
+    { id:'blueberry-muffin', name:'Blueberry Muffin', cat:'Cupcakes & Muffins', desc:'Bursting with juicy blueberries.', badges:[], rating:4.7, variants:[['1 pc',60]], img:'1587668178277-295251f900ce', limited:true },
+    { id:'choco-lava', name:'Choco Lava', cat:'Cupcakes & Muffins', desc:'Warm molten chocolate centre — order it warm!', badges:['Bestseller','New'], rating:4.9, variants:[['1 pc',70]], img:'1564355808539-22fda35bed7e', today:true },
+    { id:'brownie', name:'Brownie', cat:'Cupcakes & Muffins', desc:'Fudgy, dense and unapologetically chocolatey.', badges:[], rating:4.8, variants:[['1 pc',70]], img:'1541599468348-e96984315921' },
+
+    /* SNACKS & SAVOURIES */
+    { id:'veg-puff', name:'Veg Puff', cat:'Snacks & Savouries', desc:'Flaky pastry, spiced veggie filling.', badges:['Veg'], rating:4.7, variants:[['1 pc',25]], img:'1601050690597-df0568f70950' },
+    { id:'paneer-patties', name:'Paneer Patties', cat:'Snacks & Savouries', desc:'Crisp outside, masala paneer inside.', badges:['Veg'], rating:4.8, variants:[['1 pc',35]], img:'1589301760014-d929f3979dbc' },
+    { id:'veg-burger', name:'Veg Burger', cat:'Snacks & Savouries', desc:'Our soft buns, crispy patty, house sauce.', badges:['Veg','Bestseller'], rating:4.8, variants:[['1 pc',60]], img:'1568901346375-23c9450c58cd' },
+    { id:'veg-sandwich', name:'Veg Sandwich', cat:'Snacks & Savouries', desc:'Garden veggies, grilled on our milk bread.', badges:['Veg'], rating:4.6, variants:[['1 pc',60]], img:'1528735602778-2f0b1875c33c' },
+    { id:'pizza-slice', name:'Pizza Slice', cat:'Snacks & Savouries', desc:'Cheesy, herby and served warm.', badges:['Veg'], rating:4.7, variants:[['1 slice',70]], img:'1574071318508-1cdbab80d002' },
+    { id:'cheese-garlic-roll', name:'Cheese Garlic Roll', cat:'Snacks & Savouries', desc:'Garlic butter roll with a cheese heart.', badges:['Veg'], rating:4.8, variants:[['1 pc',50]], img:'1571997478779-2adcbbe9ab2f' },
+
+    /* CAFE & BEVERAGES */
+    { id:'hot-coffee', name:'Hot Coffee', cat:'Cafe & Beverages', desc:'Strong, soothing and freshly brewed.', badges:['Veg'], rating:4.7, variants:[['1 cup',50]], img:'1495474472287-4d71bcdd2085' },
+    { id:'cold-coffee', name:'Cold Coffee', cat:'Cafe & Beverages', desc:'Creamy, frothy and ice cold.', badges:['Veg'], rating:4.8, variants:[['1 glass',80]], img:'1517701550927-30cf4ba1dba5' },
+    { id:'masala-chai', name:'Masala Chai', cat:'Cafe & Beverages', desc:'Kadak chai with our secret masala mix.', badges:['Veg','Bestseller'], rating:4.9, variants:[['1 cup',20]], img:'1571934811356-5cc061b6821f' },
+    { id:'oreo-shake', name:'Oreo Shake', cat:'Cafe & Beverages', desc:'Cookies-and-cream thick shake.', badges:['Bestseller'], rating:4.8, variants:[['1 glass',120]], img:'1579954115545-a95591f28bfc' },
+    { id:'choco-shake', name:'Chocolate Shake', cat:'Cafe & Beverages', desc:'Belgian-style cocoa, blended cold.', badges:[], rating:4.7, variants:[['1 glass',110]], img:'1572490122747-3968b75cc699' },
+    { id:'brownie-icecream', name:'Brownie with Ice Cream', cat:'Cafe & Beverages', desc:'Warm brownie, cold scoop — pure magic.', badges:[], rating:4.9, variants:[['1 serving',130]], img:'1563805042-7684c019e1cb' }
+  ],
+
+  categories: ['All','Cakes','Pastries','Breads & Buns','Cookies & Biscuits','Cupcakes & Muffins','Snacks & Savouries','Cafe & Beverages'],
+
+  /* ---------- EDIT: Custom cake studio (base price per 500g) ---------- */
+  cakeFlavours: [
+    ['Chocolate Truffle',450], ['Black Forest',400], ['Butterscotch',420], ['Pineapple',380],
+    ['Red Velvet',550], ['Fresh Fruit',500], ['Rasmalai',650], ['Kit Kat Gems',600]
+  ],
+  cakeWeightMult: { '500g':1, '1kg':2, '1.5kg':3, '2kg':4, '3kg':6 },
+
+  /* ---------- EDIT: REVIEWS — SAMPLE DATA. Replace name/text/product/date with real ones. ---------- */
+  reviews: [
+    { name:'Priya Sharma', stars:5, text:'The black forest cake for my daughter\u2019s birthday was the softest I have ever tasted. Everyone asked where it was from!', product:'Black Forest Cake (1kg)', date:'2 weeks ago' },
+    { name:'Rahul Yadav', stars:5, text:'Ordered cookies and bread on WhatsApp at 9 PM — ready for pickup in 30 minutes. Fresh and still warm.', product:'Butter Cookies (250g)', date:'1 month ago' },
+    { name:'Sneha Gupta', stars:4, text:'Red velvet is lovely and not too sweet. Wish the cafe had a little more seating, but the pastries make up for it!', product:'Red Velvet Pastry', date:'3 weeks ago' },
+    { name:'Amit Verma', stars:5, text:'Their veg burgers and cold coffee have become our evening routine. Very hygienic, very friendly people.', product:'Veg Burger + Cold Coffee', date:'1 week ago' },
+    { name:'Neha Singh', stars:5, text:'Got a custom photo cake made for my parents\u2019 anniversary. The team guided me step by step on WhatsApp. Beautiful work!', product:'Custom Anniversary Cake', date:'2 months ago' },
+    { name:'Kavita Tomar', stars:4, text:'The rasmalai cake is a must-try — creamy and so unique. Prices are honest for the quality you get.', product:'Rasmalai Cake (500g)', date:'1 month ago' },
+    { name:'Rohit Chauhan', stars:5, text:'Birthday specials with candles and knife were packed so neatly. Delivery reached on time even in the rain.', product:'Chocolate Truffle Cake (1kg)', date:'3 days ago' },
+    { name:'Anjali Mishra', stars:5, text:'Masala chai and puffs in the evening — my favourite spot in Prathvipur Dhai now. Feels like home.', product:'Veg Puff + Masala Chai', date:'2 weeks ago' }
+  ],
+  ratingBreakdown: [82, 13, 3, 1, 1], /* 5★,4★,3★,2★,1★ percentages */
+
+  /* ---------- EDIT: GALLERY images (Unsplash IDs) & captions ---------- */
+  gallery: [
+    ['1509440159596-0249088772ff','Morning bake — croissants & rolls'],
+    ['1578985545062-69928b1d9587','Chocolate truffle, our bestseller'],
+    ['1541167760496-1628856ab772','Cafe corner coffee'],
+    ['1517433670267-08bbd4be890f','Breads, straight from the oven'],
+    ['1499636136210-6f4ee915583e','Weekend cookie trays'],
+    ['1565958011703-44f9829ba187','Butterscotch cream cake'],
+    ['1551024506-0bccd828d307','Chocolate dessert cups'],
+    ['1571934811356-5cc061b6821f','Kadak masala chai'],
+    ['1484723091739-30a097e8f929','Fresh fruit & berry bakes'],
+    ['1568901346375-23c9450c58cd','Evening burgers & snacks']
+  ],
+
+  /* ---------- EDIT: FAQ ---------- */
+  faqs: [
+    ['Do you deliver?','Yes! We deliver locally in and around Prathvipur Dhai. Share your location with us on WhatsApp while ordering and we\u2019ll confirm the delivery time and any charges.'],
+    ['Are your cakes eggless?','Almost every cake and pastry can be made eggless at no extra cost — including most custom cakes. Just mention it when you order on WhatsApp.'],
+    ['How early should I book a custom cake?','For birthday and occasion cakes, 24–48 hours is ideal. For large or wedding cakes, 3+ days helps us plan the design perfectly. Message us early and we\u2019ll guide you.'],
+    ['How do I place an order?','Pick your items from the menu above, tap \u201cOrder on WhatsApp\u201d, and send the pre-filled message. We confirm price and pickup/delivery time within minutes.'],
+    ['Can I customise the design on a cake?','Absolutely — photo cakes, theme cakes, message cakes and more. Use our Custom Cake Studio above or describe your idea on WhatsApp.']
+  ],
+
+  /* ---------- EDIT: Owner info ---------- */
+  owner: {
+    name: 'Atul Kumar',
+    photo: '/images/owner.jpg',           /* ← upload your real photo here */
+    photoFallback: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=760&q=70&auto=format&fit=crop'
+  }
+};
+/* ▲▲▲ END OF EDITABLE DATA ▲▲▲
+══════════════════════════════════════════════════════════════ */
+
+(function(){
+'use strict';
+
+/* ---------- helpers ---------- */
+const qs  = (s, el=document) => el.querySelector(s);
+const qsa = (s, el=document) => [...el.querySelectorAll(s)];
+const money = n => '₹' + n.toLocaleString('en-IN');
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const FINE = matchMedia('(hover:hover) and (pointer:fine)').matches;
+const byId = id => DATA.products.find(p => p.id === id);
+const U = (id, w=640) => `https://images.unsplash.com/photo-${id}?w=${w}&q=70&auto=format&fit=crop`;
+const pic = seed => `https://picsum.photos/seed/${seed}/640/480`;
+const HAS_GSAP = typeof gsap !== 'undefined';
+
+/* icons */
+const IC = {
+  wa:'<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>',
+  bag:'<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>',
+  heart:'<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l8.84 8.84 8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/>',
+  x:'<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>',
+  plus:'<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>',
+  minus:'<line x1="5" y1="12" x2="19" y2="12"/>',
+  check:'<polyline points="20 6 9 17 4 12"/>',
+  clock:'<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>'
+};
+const ic = (n, cls='w-4 h-4', fill=true) =>
+  `<svg class="${cls}" viewBox="0 0 24 24" fill="${fill?'currentColor':'none'}" ${fill?'':'stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"'} aria-hidden="true">${IC[n]}</svg>`;
+
+/* stars (accurate partial fill via width overlay) */
+const starRow = cls => Array.from({length:5}, () =>
+  `<svg class="${cls}" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`).join('');
+const stars = (r, cls='w-3 h-3') =>
+  `<span class="stars" role="img" aria-label="${r} out of 5 stars"><span class="stars-bg">${starRow(cls)}</span><span class="stars-fill" style="width:${(r/5*100).toFixed(0)}%">${starRow(cls)}</span></span>`;
+
+/* ---------- toast ---------- */
+function toast(msg, icon='check'){
+  const el = document.createElement('div');
+  el.className = 'toast';
+  el.innerHTML = (icon==='wa' ? `<svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">${IC.wa}</svg>` : ic('check')) + `<span>${msg}</span>`;
+  qs('#toasts').appendChild(el);
+  requestAnimationFrame(()=> el.classList.add('show'));
+  setTimeout(()=>{ el.classList.remove('show'); setTimeout(()=>el.remove(), 400); }, 2300);
+}
+
+/* ---------- confetti ---------- */
+const conf = { canvas:null, ctx:null, parts:[], on:false };
+function confetti(x = innerWidth/2, y = innerHeight/2){
+  if (RM) return;
+  if (!conf.canvas){ conf.canvas = qs('#confetti'); conf.ctx = conf.canvas.getContext('2d'); }
+  conf.canvas.width = innerWidth; conf.canvas.height = innerHeight;
+  const colors = ['#C8963E','#D9776B','#FFF8F0','#25D366','#8A5A2B'];
+  for (let i=0;i<70;i++){
+    const a = Math.random()*Math.PI*2, sp = 3.5 + Math.random()*7;
+    conf.parts.push({ x, y, vx:Math.cos(a)*sp, vy:Math.sin(a)*sp-3.2, g:.16+Math.random()*.1,
+      rot:Math.random()*Math.PI, vr:(Math.random()-.5)*.3, s:4+Math.random()*5, c:colors[i%5], life:65+Math.random()*30 });
+  }
+  if (!conf.on){ conf.on = true; confTick(); }
+}
+function confTick(){
+  const c = conf.ctx; c.clearRect(0,0,conf.canvas.width,conf.canvas.height);
+  conf.parts = conf.parts.filter(p => p.life > 0);
+  conf.parts.forEach(p=>{
+    p.x+=p.vx; p.y+=p.vy; p.vy+=p.g; p.vx*=.985; p.rot+=p.vr; p.life--;
+    c.save(); c.translate(p.x,p.y); c.rotate(p.rot);
+    c.globalAlpha = Math.min(1, p.life/28); c.fillStyle = p.c;
+    c.fillRect(-p.s/2, -p.s/2, p.s, p.s*.62); c.restore();
+  });
+  if (conf.parts.length) requestAnimationFrame(confTick);
+  else { conf.on = false; c.clearRect(0,0,conf.canvas.width,conf.canvas.height); }
+}
+
+/* ---------- WhatsApp senders ---------- */
+function sendWA(url, e){
+  toast('Opening WhatsApp…', 'wa');
+  confetti(e && e.clientX ? e.clientX : innerWidth/2, e && e.clientY ? e.clientY : innerHeight/2);
+  window.open(url, '_blank', 'noopener');
+}
+const orderLink = (name, vLabel, qty, price) =>
+  'https://wa.me/918904477337?text=' + encodeURIComponent(
+    `Hello Antra Bakery! 👋 I'd like to order:\n• ${name} (${vLabel}) × ${qty} = ₹${price}\nPlease confirm availability and delivery/pickup time. Thank you!`);
+
+/* ---------- animated price ---------- */
+function animateNumber(el, to){
+  const from = el._val ?? to; el._val = to;
+  if (RM || from === to){ el.textContent = money(to); return; }
+  cancelAnimationFrame(el._raf);
+  const t0 = performance.now(), dur = 340;
+  const step = t => {
+    const k = Math.min(1,(t-t0)/dur), e = 1-Math.pow(1-k,3);
+    el.textContent = money(Math.round(from + (to-from)*e));
+    if (k<1) el._raf = requestAnimationFrame(step);
+  };
+  el._raf = requestAnimationFrame(step);
+}
+
+/* ============================================================
+   STATE — basket & wishlist (persist in memory for the session)
+============================================================ */
+const basket = new Map();   // key "id:variantIdx" → { id, v, qty }
+const wish   = new Set();
+let drawerTab = 'basket';
+
+function updateFab(){
+  const n = [...basket.values()].reduce((s,i)=>s+i.qty, 0);
+  const b = qs('#basketBadge');
+  b.textContent = n; b.classList.toggle('show', n>0);
+  qs('#tabBtnBasket').textContent = `Basket${n ? ` (${n})` : ''}`;
+  const dTabs = qsa('.d-tab'); dTabs[1].textContent = `Saved${wish.size ? ` (${wish.size})` : ''}`;
+}
+function fly(fromEl){
+  const fab = qs('#basketFab');
+  if (!fromEl || !FINE || RM){ fab.classList.remove('bump'); void fab.offsetWidth; fab.classList.add('bump'); return; }
+  const a = fromEl.getBoundingClientRect(), b = fab.getBoundingClientRect();
+  const dot = document.createElement('div'); dot.className = 'fly-dot';
+  dot.style.left = a.left + a.width/2 + 'px'; dot.style.top = a.top + a.height/2 + 'px';
+  document.body.appendChild(dot);
+  const dx = b.left+b.width/2-(a.left+a.width/2), dy = b.top+b.height/2-(a.top+a.height/2);
+  dot.animate(
+    [{transform:'translate(-50%,-50%) scale(1)',opacity:1},
+     {transform:`translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) scale(.25)`,opacity:.5}],
+    {duration:620, easing:'cubic-bezier(.2,.7,.3,1)'}
+  ).onfinish = () => { dot.remove(); fab.classList.remove('bump'); void fab.offsetWidth; fab.classList.add('bump'); };
+}
+function addToBasket(id, v, qty, srcEl){
+  const key = id+':'+v;
+  const cur = basket.get(key);
+  basket.set(key, { id, v, qty:(cur?cur.qty:0)+qty });
+  updateFab(); fly(srcEl); toast('Added to basket');
+  if (qs('#drawer').classList.contains('open')) renderDrawer();
+}
+
+/* ============================================================
+   PRODUCT CARD TEMPLATE (used in menu, bestsellers, modal)
+============================================================ */
+function badgeHTML(p){
+  let h = '';
+  if (p.badges.includes('Bestseller')) h += `<span class="badge badge--best">Bestseller</span>`;
+  if (p.today) h += `<span class="badge badge--today">Today’s Fresh</span>`;
+  if (p.badges.includes('New')) h += `<span class="badge badge--new">New</span>`;
+  if (p.limited) h += `<span class="badge badge--limit">${ic('clock','w-2.5 h-2.5',false)}Limited</span>`;
+  if (p.badges.includes('Eggless')) h += `<span class="badge badge--egg">Eggless</span>`;
+  else if (p.badges.includes('Veg')) h += `<span class="badge badge--veg">Veg</span>`;
+  return h;
+}
+function cardHTML(p, dark=false){
+  const cls = dark ? 'p-card p-card--dark' : 'p-card';
+  const unit = p.variants[0][1];
+  return `
+  <article class="${cls}" data-id="${p.id}" data-v="0" data-q="1">
+    <div class="p-card__media" data-act="quick" role="button" tabindex="0" aria-label="Quick view ${p.name}">
+      <img src="${U(p.img)}" alt="${p.name} — freshly baked at Antra Bakery" width="640" height="480" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='${pic(p.id)}'">
+      ${dark ? '<span class="ribbon">Bestseller</span>' : ''}
+      <span class="absolute top-2.5 left-2.5 flex flex-wrap gap-1.5 max-w-[75%]">${badgeHTML(p)}</span>
+      <button class="wish-btn${wish.has(p.id)?' active':''}" data-act="wish" aria-label="Save ${p.name} to wishlist">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${IC.heart}</svg>
+      </button>
+    </div>
+    <div class="p-card__body">
+      <div class="flex items-start justify-between gap-2">
+        <h3 class="p-name">${p.name}</h3>
+        <span class="text-[11px] font-semibold text-cocoa/55 flex items-center gap-1 whitespace-nowrap mt-1">${stars(p.rating,'w-2.5 h-2.5')} ${p.rating}</span>
+      </div>
+      <p class="p-desc">${p.desc}</p>
+      ${p.variants.length > 1 ? `<div class="flex flex-wrap gap-1.5">${p.variants.map((v,i)=>
+          `<button class="v-pill${i===0?' active':''}" data-act="variant" data-v="${i}">${v[0]}</button>`).join('')}</div>` : ''}
+      <div class="p-foot">
+        <div class="flex items-center justify-between gap-3">
+          <span class="stepper">
+            <button data-act="minus" aria-label="Decrease quantity">${ic('minus','w-3.5 h-3.5')}</button>
+            <span class="qty-val">1</span>
+            <button data-act="plus" aria-label="Increase quantity">${ic('plus','w-3.5 h-3.5')}</button>
+          </span>
+          <span class="price price-val" data-base="${unit}">${money(unit)}</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="btn-order" data-act="order">${ic('wa','w-4 h-4')}Order on WhatsApp</button>
+          <button class="icon-btn" data-act="basket" aria-label="Add ${p.name} to basket">${ic('bag')}</button>
+        </div>
+      </div>
+    </div>
+  </article>`;
+}
+
+/* ============================================================
+   MENU — tabs, search, chips, skeleton, staggered render
+============================================================ */
+const state = { cat:'All', q:'', chips:new Set() };
+
+function buildTabs(){
+  const wrap = qs('#menuTabs');
+  DATA.categories.forEach(c => {
+    const b = document.createElement('button');
+    b.className = 'tab' + (c===state.cat?' active':''); b.textContent = c;
+    b.dataset.act = 'cat'; b.dataset.cat = c; b.setAttribute('role','tab');
+    b.setAttribute('aria-selected', c===state.cat);
+    wrap.appendChild(b);
+  });
+  moveInk();
+}
+function moveInk(){
+  const active = qs('#menuTabs .tab.active'); const ink = qs('#tabInk');
+  if (!active) return;
+  ink.style.left = active.offsetLeft + 'px'; ink.style.width = active.offsetWidth + 'px';
+}
+function filtered(){
+  const q = state.q.trim().toLowerCase();
+  return DATA.products.filter(p => {
+    if (state.cat!=='All' && p.cat!==state.cat) return false;
+    if (state.chips.has('eggless') && !p.badges.includes('Eggless')) return false;
+    if (state.chips.has('bestseller') && !p.badges.includes('Bestseller')) return false;
+    if (state.chips.has('under100') && Math.min(...p.variants.map(v=>v[1])) > 100) return false;
+    if (q && !(p.name+' '+p.desc).toLowerCase().includes(q)) return false;
+    return true;
+  });
+}
+function skeleton(n){
+  return Array.from({length: Math.min(Math.max(n,4), 8)}, () =>
+    `<div class="p-card"><div class="sk sk-img"></div><div class="p-card__body"><div class="sk sk-line !w-2/3"></div><div class="sk sk-line !w-1/2"></div><div class="sk sk-block"></div></div></div>`).join('');
+}
+let paintTimer;
+function showList(list){
+  const grid = qs('#menuGrid');
+  grid.innerHTML = skeleton(list.length);
+  qs('#menuCount').textContent = list.length
+    ? `Showing ${list.length} item${list.length>1?'s':''}${state.cat!=='All' ? ' in '+state.cat : ''}`
+    : '';
+  clearTimeout(paintTimer);
+  paintTimer = setTimeout(()=> paint(list), 280);
+}
+function paint(list){
+  const grid = qs('#menuGrid');
+  if (!list.length){
+    grid.innerHTML = `<div class="sm:col-span-2 lg:col-span-3 xl:col-span-4 text-center py-14">
+      <p class="font-serif text-2xl">No treats found${state.q ? ` for “${state.q}”` : ''}</p>
+      <p class="text-[13px] text-cocoa/60 mt-2">Try another word — or ask us directly, we love special requests!</p>
+      <a href="${DATA.waChat}" target="_blank" rel="noopener" class="btn btn-wa mt-6 inline-flex">Ask on WhatsApp</a></div>`;
+    return;
+  }
+  grid.innerHTML = list.map(p => cardHTML(p)).join('');
+  if (HAS_GSAP && !RM){
+    gsap.fromTo(grid.children, {y:26, autoAlpha:0}, {y:0, autoAlpha:1, duration:.5, stagger:.045, ease:'power2.out', clearProps:'transform,opacity,visibility'});
+  }
+  if (FINE && !RM) qsa('.p-card', grid).forEach(attachTilt);
+}
+
+/* card state helpers (shared by grid + modal) */
+function updatePrice(root){
+  const p = byId(root.dataset.id), v = +root.dataset.v, q = +root.dataset.q;
+  const el = qs('.price-val', root); if (el) animateNumber(el, p.variants[v][1]*q);
+}
+function stepQty(root, d){
+  const q = Math.min(20, Math.max(1, +root.dataset.q + d));
+  root.dataset.q = q;
+  const el = qs('.qty-val', root); if (el) el.textContent = q;
+  updatePrice(root);
+}
+function setVariant(root, idx){
+  root.dataset.v = idx;
+  qsa('.v-pill', root).forEach((b,i)=> b.classList.toggle('active', i===+idx));
+  updatePrice(root);
+}
+function toggleWish(id, btn){
+  wish.has(id) ? wish.delete(id) : wish.add(id);
+  if (btn){ btn.classList.toggle('active', wish.has(id)); btn.classList.remove('pop'); void btn.offsetWidth; btn.classList.add('pop'); }
+  /* sync hearts elsewhere */
+  qsa(`[data-id="${id}"] .wish-btn`).forEach(b => b.classList.toggle('active', wish.has(id)));
+  updateFab();
+  toast(wish.has(id) ? 'Saved to your wishlist' : 'Removed from wishlist');
+  if (qs('#drawer').classList.contains('open') && drawerTab==='wish') renderDrawer();
+}
+
+/* ---------- 3D tilt (desktop, motion-safe only) ---------- */
+function attachTilt(card){
+  card.addEventListener('mousemove', e => {
+    const r = card.getBoundingClientRect();
+    const rx = ((e.clientY - r.top)/r.height - .5) * -5;
+    const ry = ((e.clientX - r.left)/r.width  - .5) *  5;
+    card.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+  });
+  card.addEventListener('mouseleave', ()=> card.style.transform = '');
+}
+
+/* ============================================================
+   DRAWER — basket + wishlist tabs
+============================================================ */
+function rowHTML(p, v, qty, key){
+  return `<div class="b-item" data-id="${p.id}" data-v="${v}" data-q="${qty}" ${key?`data-key="${key}"`:''}>
+    <img src="${U(p.img,160)}" alt="" onerror="this.onerror=null;this.src='${pic(p.id)}'">
+    <div class="flex-1 min-w-0">
+      <div class="flex items-start justify-between gap-2">
+        <div class="min-w-0"><p class="font-serif font-bold text-[14px] truncate">${p.name}</p>
+        <p class="text-[11px] text-cocoa/55">${p.variants[v][0]}</p></div>
+        <button class="text-cocoa/40 hover:text-rose transition-colors" data-act="${key?'rm':'wish-rm'}" aria-label="Remove">${ic('x','w-4 h-4')}</button>
+      </div>
+      <div class="flex items-center justify-between mt-2.5">
+        <span class="stepper !border-cocoa/15">
+          <button data-act="minus" aria-label="Decrease">${ic('minus','w-3 h-3')}</button>
+          <span class="qty-val">${qty}</span>
+          <button data-act="plus" aria-label="Increase">${ic('plus','w-3 h-3')}</button>
+        </span>
+        <span class="price !text-[16px] price-val">${money(p.variants[v][1]*qty)}</span>
+      </div>
+    </div>
+  </div>`;
+}
+function renderDrawer(){
+  const body = qs('#drawerBody'), foot = qs('#drawerFoot');
+  if (drawerTab === 'basket'){
+    if (!basket.size){
+      body.innerHTML = `<div class="text-center py-16">
+        <div class="w-16 h-16 mx-auto rounded-full bg-beige grid place-items-center text-caramel">${ic('bag','w-7 h-7')}</div>
+        <p class="font-serif font-bold text-xl mt-5">Your basket is empty</p>
+        <p class="text-[13px] text-cocoa/60 mt-2">Fresh bakes are waiting for you.</p>
+        <button class="btn btn-dark mt-6" data-act="browse">Browse the Menu</button></div>`;
+      foot.innerHTML = ''; return;
+    }
+    let total = 0;
+    body.innerHTML = [...basket.entries()].map(([key,it])=>{
+      const p = byId(it.id); total += p.variants[it.v][1]*it.qty;
+      return rowHTML(p, it.v, it.qty, key);
+    }).join('');
+    foot.innerHTML = `
+      <div class="flex items-baseline justify-between mb-1">
+        <span class="text-[13px] text-cocoa/60">Total (indicative)</span>
+        <span class="font-serif font-extrabold text-2xl price" id="drawerTotal">${money(total)}</span>
+      </div>
+      <p class="text-[11px] text-cocoa/45 italic mb-4">Final price confirmed on WhatsApp.</p>
+      <button class="btn btn-wa w-full" data-act="order-basket">${ic('wa','w-5 h-5')}Send Full Order on WhatsApp</button>`;
+  } else {
+    if (!wish.size){
+      body.innerHTML = `<div class="text-center py-16">
+        <div class="w-16 h-16 mx-auto rounded-full bg-beige grid place-items-center" style="color:#D9776B">${ic('heart','w-7 h-7')}</div>
+        <p class="font-serif font-bold text-xl mt-5">Nothing saved yet</p>
+        <p class="text-[13px] text-cocoa/60 mt-2">Tap the heart on any treat to save it for later.</p></div>`;
+      foot.innerHTML = ''; return;
+    }
+    body.innerHTML = [...wish].map(id => {
+      const p = byId(id);
+      return `<div class="b-item" data-id="${p.id}" data-v="0" data-q="1">
+        <img src="${U(p.img,160)}" alt="" onerror="this.onerror=null;this.src='${pic(p.id)}'">
+        <div class="flex-1 min-w-0">
+          <div class="flex items-start justify-between gap-2">
+            <div class="min-w-0"><p class="font-serif font-bold text-[14px] truncate">${p.name}</p>
+            <p class="text-[11px] text-cocoa/55">${p.variants[0][0]} · ${money(p.variants[0][1])}</p></div>
+            <button class="text-cocoa/40 hover:text-rose transition-colors" data-act="wish-rm" aria-label="Remove">${ic('x','w-4 h-4')}</button>
+          </div>
+          <button class="btn-order !mt-2.5 w-full" data-act="order">${ic('wa','w-4 h-4')}Order on WhatsApp</button>
+        </div></div>`;
+    }).join('');
+    foot.innerHTML = '';
+  }
+}
+function openDrawer(tab){
+  drawerTab = tab || drawerTab;
+  qsa('.d-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === drawerTab));
+  renderDrawer();
+  qs('#drawer').classList.add('open'); qs('#drawerScrim').classList.add('open');
+  lenis && lenis.stop();
+}
+function closeDrawer(){
+  qs('#drawer').classList.remove('open'); qs('#drawerScrim').classList.remove('open');
+  lenis && lenis.start();
+}
+function orderBasket(e){
+  if (!basket.size){ toast('Your basket is empty'); return; }
+  let lines = [], total = 0;
+  basket.forEach(it=>{
+    const p = byId(it.id), line = p.variants[it.v][1]*it.qty;
+    lines.push(`• ${p.name} (${p.variants[it.v][0]}) × ${it.qty} = ₹${line}`);
+    total += line;
+  });
+  sendWA('https://wa.me/918904477337?text=' + encodeURIComponent(
+    `Hello Antra Bakery! 👋 I'd like to order:\n${lines.join('\n')}\n—\nTotal: ₹${total}\nPlease confirm availability and delivery/pickup time. Thank you!`), e);
+}
+
+/* ============================================================
+   QUICK VIEW MODAL
+============================================================ */
+let lastFocus = null;
+function openQuick(id){
+  const p = byId(id); if (!p) return;
+  lastFocus = document.activeElement;
+  const m = qs('#qmCard');
+  m.dataset.id = id; m.dataset.v = 0; m.dataset.q = 1;
+  m.innerHTML = `
+    <div class="relative">
+      <img src="${U(p.img,800)}" alt="${p.name} — freshly baked at Antra Bakery" width="800" height="600" onerror="this.onerror=null;this.src='${pic(p.id)}'" class="w-full h-56 md:h-full md:min-h-[380px] object-cover md:rounded-l-[28px]">
+      <span class="absolute top-3 left-3 flex flex-wrap gap-1.5">${badgeHTML(p)}</span>
+      <button class="icon-btn !absolute top-3 right-3" data-act="close-quick" aria-label="Close quick view">${ic('x')}</button>
+    </div>
+    <div class="p-6 md:p-8 flex flex-col gap-3.5" data-id="${id}" data-v="0" data-q="1">
+      <div class="flex items-center gap-2.5">${stars(p.rating)}<span class="text-[12px] font-semibold text-cocoa/60">${p.rating} · ${p.cat}</span></div>
+      <h3 class="font-serif font-bold text-2xl leading-tight">${p.name}</h3>
+      <p class="text-[13.5px] text-cocoa/70 leading-relaxed">${p.desc} Made fresh in our kitchen — best enjoyed the same day.${p.cat==='Cakes' ? ' For 1kg+ cakes, order a day in advance.' : ''}</p>
+      ${p.variants.length>1 ? `<div class="flex flex-wrap gap-1.5">${p.variants.map((v,i)=>
+        `<button class="v-pill${i===0?' active':''}" data-act="variant" data-v="${i}">${v[0]} · ${money(v[1])}</button>`).join('')}</div>` : ''}
+      <div class="flex items-center justify-between gap-3 mt-1">
+        <span class="stepper">
+          <button data-act="minus" aria-label="Decrease quantity">${ic('minus','w-3.5 h-3.5')}</button>
+          <span class="qty-val">1</span>
+          <button data-act="plus" aria-label="Increase quantity">${ic('plus','w-3.5 h-3.5')}</button>
+        </span>
+        <span class="price price-val">${money(p.variants[0][1])}</span>
+      </div>
+      <div class="flex items-center gap-2.5 mt-2">
+        <button class="btn-order !py-3 !text-[13px]" data-act="order">${ic('wa','w-4 h-4')}Order on WhatsApp</button>
+        <button class="icon-btn" data-act="basket" aria-label="Add to basket">${ic('bag')}</button>
+        <button class="icon-btn" data-act="wish" aria-label="Save to wishlist"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="${wish.has(id)?'currentColor':'none'}" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${IC.heart}</svg></button>
+      </div>
+    </div>`;
+  const priceEl = qs('.price-val', m); if (priceEl) priceEl._val = p.variants[0][1];
+  qs('#quickModal').classList.add('open');
+  lenis && lenis.stop();
+  const c = qs('[data-act="close-quick"]', m); c && c.focus();
+}
+function closeQuick(){
+  qs('#quickModal').classList.remove('open');
+  lenis && lenis.start();
+  if (lastFocus) lastFocus.focus();
+}
+
+/* ============================================================
+   LIGHTBOX
+============================================================ */
+let lbIdx = 0;
+function openLB(i){
+  lbIdx = i;
+  const [id, cap] = DATA.gallery[i];
+  const img = qs('#lbImg');
+  img.src = U(id, 1200); img.alt = cap;
+  img.onerror = () => { img.onerror = null; img.src = `https://picsum.photos/seed/antra-g${i}/1200/800`; };
+  qs('#lbCap').textContent = cap;
+  qs('#lbCount').textContent = `${i+1} / ${DATA.gallery.length}`;
+  qs('#lightbox').classList.add('open');
+  lenis && lenis.stop();
+  qs('[data-act="close-lb"]').focus();
+}
+function closeLB(){ qs('#lightbox').classList.remove('open'); lenis && lenis.start(); }
+function lbStep(d){ openLB((lbIdx + d + DATA.gallery.length) % DATA.gallery.length); }
+
+/* ============================================================
+   CAKE STUDIO
+============================================================ */
+const cake = { occasion:'Birthday', flavour:'Chocolate Truffle', weight:'1kg', egg:'Eggless', msg:'', date:'' };
+function cakePrice(){
+  const f = DATA.cakeFlavours.find(f => f[0] === cake.flavour) || DATA.cakeFlavours[0];
+  return f[1] * DATA.cakeWeightMult[cake.weight];
+}
+function updateCakePreview(){
+  qs('#pvTitle').textContent = `${cake.occasion} · ${cake.flavour}`;
+  qs('#pvWeight').textContent = cake.weight;
+  qs('#pvType').textContent = cake.egg;
+  qs('#pvMsg').textContent = cake.msg ? `“${cake.msg}”` : '—';
+  qs('#pvDate').textContent = cake.date
+    ? new Date(cake.date + 'T00:00').toLocaleDateString('en-IN', { day:'numeric', month:'short', year:'numeric' }) : 'Flexible';
+  qs('#pvPrice').textContent = money(cakePrice());
+}
+function orderCake(e){
+  sendWA('https://wa.me/918904477337?text=' + encodeURIComponent(
+    `Hello Antra Bakery! 👋 I'd like to order a CUSTOM CAKE:\n• Occasion: ${cake.occasion}\n• Flavour: ${cake.flavour}\n• Weight: ${cake.weight} · ${cake.egg}\n• Message on cake: ${cake.msg ? `"${cake.msg}"` : '—'}\n• Needed by: ${qs('#pvDate').textContent}\n• Approx. price: ₹${cakePrice()} (to be confirmed)\nPlease confirm availability and delivery/pickup time. Thank you!`), e);
+}
+
+/* ============================================================
+   LENIS + GSAP
+============================================================ */
+let lenis = null;
+try {
+  if (!RM && typeof Lenis !== 'undefined'){
+    lenis = new Lenis({ duration: 1.15, smoothWheel: true });
+    if (HAS_GSAP){
+      gsap.registerPlugin(ScrollTrigger);
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(t => lenis.raf(t*1000));
+      gsap.ticker.lagSmoothing(0);
+    } else {
+      const raf = t => { lenis.raf(t); requestAnimationFrame(raf); };
+      requestAnimationFrame(raf);
+    }
+  }
+} catch(err){ lenis = null; }
+
+function scrollToSel(sel){
+  const el = qs(sel); if (!el) return;
+  if (lenis) lenis.scrollTo(el, { offset: -66, duration: 1.2 });
+  else el.scrollIntoView({ behavior: RM ? 'auto' : 'smooth' });
+}
+
+/* ============================================================
+   BUILD DYNAMIC CONTENT
+============================================================ */
+function buildMarquee(){
+  const items = ['Fresh Cakes','Soft Breads','Crispy Cookies','Hot Coffee','Custom Orders','Birthday Specials'];
+  const seq = items.map(t => `<span class="mq-item">${t}<span class="mq-d"></span></span>`).join('').repeat(3);
+  qs('#marqueeTrack').innerHTML = seq + seq; /* two identical halves → seamless -50% loop */
+}
+function buildBestsellers(){
+  const best = DATA.products.filter(p => p.badges.includes('Bestseller')).slice(0,8);
+  qs('#bsTrack').innerHTML = best.map(p => cardHTML(p, true)).join('');
+}
+function buildReviews(){
+  qs('#sumStars').innerHTML = stars(4.8, 'w-5 h-5');
+  qs('#ratingBars').innerHTML = DATA.ratingBreakdown.map((pct,i)=>
+    `<div class="flex items-center gap-2.5"><span class="w-6 text-cocoa/55">${5-i}★</span>
+     <span class="bar flex-1"><span data-bar data-w="${pct}"></span></span>
+     <span class="w-8 text-right text-cocoa/45">${pct}%</span></div>`).join('');
+  qs('#revTrack').innerHTML = DATA.reviews.map(r => `
+    <article class="rev-card">
+      <div class="flex items-center gap-3">
+        <span class="avatar">${r.name.split(' ').map(w=>w[0]).slice(0,2).join('')}</span>
+        <div class="flex-1 min-w-0">
+          <p class="font-semibold text-[13.5px] flex items-center gap-1.5">${r.name}
+            <svg class="w-3.5 h-3.5 text-[#2E7D4F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span class="text-[10px] font-medium text-[#2E7D4F] bg-[#2E7D4F]/10 px-1.5 py-0.5 rounded-full">Verified</span></p>
+          <p class="text-[11px] text-cocoa/50">${r.date}</p>
+        </div>
+        ${stars(r.stars)}
+      </div>
+      <p class="text-[13px] leading-relaxed text-cocoa/75">“${r.text}”</p>
+      <p class="text-[11.5px] text-gold-ink font-medium mt-auto">Ordered: ${r.product}</p>
+    </article>`).join('');
+}
+function buildGallery(){
+  qs('#galleryGrid').innerHTML = DATA.gallery.map(([id, cap], i)=>{
+    const h = 180 + (i % 3) * 60; /* varied heights → masonry rhythm */
+    return `<button class="g-item" data-act="lightbox" data-i="${i}" aria-label="View: ${cap}">
+      <img src="${U(id, 620)}" alt="${cap} — Antra Bakery" style="height:${h}px" width="620" height="${h}" loading="lazy" decoding="async"
+        onerror="this.onerror=null;this.src='https://picsum.photos/seed/antra-g${i}/620/${h}'">
+      <span class="g-cap">${cap}</span></button>`;
+  }).join('');
+}
+function buildFaq(){
+  qs('#faqList').innerHTML = DATA.faqs.map(([q,a]) => `
+    <div class="faq bg-white/70 border border-cocoa/10 rounded-2xl overflow-hidden">
+      <button class="faq__q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-serif font-bold text-[16px]" aria-expanded="false">
+        ${q}
+        <svg class="w-4 h-4 text-caramel shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      </button>
+      <div class="faq__a"><div class="faq__a-in"><p class="px-6 pb-5 text-[13.5px] leading-relaxed text-cocoa/70">${a}</p></div></div>
+    </div>`).join('');
+  qsa('.faq__q').forEach(btn => btn.addEventListener('click', () => {
+    const item = btn.closest('.faq'), open = item.classList.contains('open');
+    qsa('.faq.open').forEach(f => { f.classList.remove('open'); qs('.faq__q', f).setAttribute('aria-expanded','false'); });
+    if (!open){ item.classList.add('open'); btn.setAttribute('aria-expanded','true'); }
+  }));
+}
+function buildCakeStudio(){
+  qs('#ckFlav').innerHTML = DATA.cakeFlavours.map(([f],i) =>
+    `<button class="chip${i===0?' active':''}" data-cake="flavour" data-val="${f}">${f}</button>`).join('');
+  const d = qs('#cakeDate'); d.min = new Date().toISOString().split('T')[0];
+  updateCakePreview();
+}
+function buildFooterBits(){
+  const soc = [
+    ['Call', DATA.phoneHref, '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92z"/>'],
+    ['WhatsApp', DATA.waChat + '" target="_blank" rel="noopener', IC.wa],
+    ['Instagram', 'https://instagram.com/atulk.ush" target="_blank" rel="noopener', '<rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>'],
+    ['Map', 'https://www.google.com/maps/place/Prathvipur+Dhai/@27.6189698,79.5507445,17z" target="_blank" rel="noopener', '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>']
+  ];
+  const icon = (path, fill) => `<svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="${fill?'currentColor':'none'}" ${fill?'':'stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"'} aria-hidden="true">${path}</svg>`;
+  qs('#footerSocial').innerHTML = soc.map(([label, href, path], i) =>
+    `<a href="${href}" aria-label="${label}" class="w-10 h-10 rounded-full border border-cream/20 grid place-items-center hover:bg-caramel hover:text-white hover:border-caramel transition-colors">${icon(path, i===1)}</a>`).join('');
+  qs('#footerContact').innerHTML = [
+    `<a class="hover:text-cream transition-colors flex gap-2.5 items-center" href="tel:+918904477337">${icon(soc[0][2],false)}Call 89044 77337</a>`,
+    `<a class="hover:text-cream transition-colors flex gap-2.5 items-center" href="${DATA.waChat}" target="_blank" rel="noopener">${icon(IC.wa,true)}WhatsApp Chat</a>`,
+    `<a class="hover:text-cream transition-colors flex gap-2.5 items-center" href="https://instagram.com/atulk.ush" target="_blank" rel="noopener">${icon(soc[2][2],false)}Instagram · @atulk.ush</a>`,
+    `<a class="hover:text-cream transition-colors flex gap-2.5 items-center" href="https://www.google.com/maps/place/Prathvipur+Dhai/@27.6189698,79.5507445,17z" target="_blank" rel="noopener">${icon(soc[3][2],false)}Prathvipur Dhai, UP</a>`
+  ].join('');
+  qs('#mobileContact').innerHTML = soc.map(([label, href, path], i) =>
+    `<a href="${href}" aria-label="${label}" class="w-11 h-11 rounded-full border border-cream/20 grid place-items-center hover:bg-caramel transition-colors">${icon(path, i===1)}</a>`).join('');
+}
+
+/* ============================================================
+   GLOBAL INTERACTION DELEGATION
+============================================================ */
+document.addEventListener('click', function(e){
+  /* any direct WhatsApp link → toast + confetti (navigation proceeds) */
+  const waLink = e.target.closest('a[href*="wa.me"]');
+  if (waLink){ toast('Opening WhatsApp…', 'wa'); confetti(e.clientX || innerWidth/2, e.clientY || innerHeight/2); }
+
+  /* anchor smooth-scroll */
+  const a = e.target.closest('a[href^="#"]');
+  if (a && a.getAttribute('href').length > 1 && qs(a.getAttribute('href'))){
+    e.preventDefault(); closeMobile(); scrollToSel(a.getAttribute('href')); return;
+  }
+
+  const el = e.target.closest('[data-act]');
+  if (!el) return;
+  const act = el.dataset.act;
+
+  if (act === 'cat'){
+    state.cat = el.dataset.cat;
+    qsa('#menuTabs .tab').forEach(t => { t.classList.toggle('active', t===el); t.setAttribute('aria-selected', t===el); });
+    moveInk(); showList(filtered()); return;
+  }
+  if (act === 'chip'){
+    const c = el.dataset.chip;
+    state.chips.has(c) ? state.chips.delete(c) : state.chips.add(c);
+    el.classList.toggle('active');
+    showList(filtered()); return;
+  }
+  if (act === 'quick'){ const root = el.closest('[data-id]'); openQuick(root.dataset.id); return; }
+  if (act === 'close-quick'){ closeQuick(); return; }
+  if (act === 'lightbox'){ openLB(+el.dataset.i); return; }
+  if (act === 'lb-prev'){ lbStep(-1); return; }
+  if (act === 'lb-next'){ lbStep(1); return; }
+  if (act === 'close-lb'){ closeLB(); return; }
+  if (act === 'close-drawer'){ closeDrawer(); return; }
+  if (act === 'dtab'){ openDrawer(el.dataset.tab); return; }
+  if (act === 'browse'){ closeDrawer(); scrollToSel('#menu'); return; }
+  if (act === 'cake-order'){ orderCake(e); return; }
+  if (act === 'order-basket'){ orderBasket(e); return; }
+  if (act === 'cake'){ /* studio pill */
+    const grp = el.dataset.cake, wrap = el.parentElement;
+    qsa('.chip', wrap).forEach(c => c.classList.toggle('active', c===el));
+    cake[grp] = el.dataset.val; updateCakePreview(); return;
+  }
+
+  /* card-family actions (grid cards, bestsellers, modal, drawer rows) */
+  const root = el.closest('[data-id]');
+  if (!root) return;
+  const id = root.dataset.id, p = byId(id);
+  const v = +root.dataset.v || 0, q = +root.dataset.q || 1;
+
+  switch(act){
+    case 'variant': setVariant(root, el.dataset.v); break;
+    case 'plus':
+    case 'minus': {
+      const inDrawer = !!root.closest('#drawer');
+      if (inDrawer && root.dataset.key){
+        const it = basket.get(root.dataset.key);
+        if (it){ it.qty = Math.min(20, Math.max(1, it.qty + (act==='plus'?1:-1)));
+          root.dataset.q = it.qty;
+          qs('.qty-val', root).textContent = it.qty;
+          updatePrice(root); updateFab();
+          const t = qs('#drawerTotal');
+          if (t){ let tot=0; basket.forEach(i=>{ const pr=byId(i.id); tot += pr.variants[i.v][1]*i.qty; }); animateNumber(t, tot); } }
+      } else stepQty(root, act==='plus'?1:-1);
+      break;
+    }
+    case 'order': sendWA(orderLink(p.name, p.variants[v][0], q, p.variants[v][1]*q), e); break;
+    case 'basket': addToBasket(id, v, q, el); break;
+    case 'wish': toggleWish(id, el); break;
+    case 'rm': basket.delete(root.dataset.key); updateFab(); renderDrawer(); break;
+    case 'wish-rm': wish.delete(id); updateFab(); renderDrawer(); break;
+  }
+});
+
+/* ripple on order/primary buttons */
+document.addEventListener('pointerdown', e => {
+  const b = e.target.closest('.btn, .btn-order'); if (!b) return;
+  const r = b.getBoundingClientRect(), s = document.createElement('span');
+  s.className = 'ripple';
+  s.style.left = (e.clientX - r.left - 7) + 'px';
+  s.style.top  = (e.clientY - r.top  - 7) + 'px';
+  b.appendChild(s); setTimeout(()=>s.remove(), 700);
+});
+
+/* keyboard: Esc + arrows + trap */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape'){
+    if (qs('#lightbox').classList.contains('open')) return closeLB();
+    if (qs('#quickModal').classList.contains('open')) return closeQuick();
+    if (qs('#drawer').classList.contains('open')) return closeDrawer();
+    if (qs('#mobileMenu').classList.contains('open')) return closeMobile();
+  }
+  if (qs('#lightbox').classList.contains('open')){
+    if (e.key === 'ArrowLeft') lbStep(-1);
+    if (e.key === 'ArrowRight') lbStep(1);
+  }
+  /* simple focus trap for open dialog */
+  const dlg = qs('#quickModal.open .qm-card, #drawer.open');
+  if (dlg && e.key === 'Tab'){
+    const f = qsa('a[href],button,input,[tabindex]:not([tabindex="-1"])', dlg).filter(x => !x.disabled && x.offsetParent !== null);
+    if (!f.length) return;
+    const first = f[0], last = f[f.length-1];
+    if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+  }
+});
+
+/* quick-view via Enter on media */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Enter' && e.target.matches('[data-act="quick"]')) e.target.click();
+});
+
+/* search */
+qs('#menuSearch').addEventListener('input', e => { state.q = e.target.value; showList(filtered()); });
+
+/* lightbox swipe */
+(function(){
+  let sx = null;
+  const lb = qs('#lightbox');
+  lb.addEventListener('touchstart', e => sx = e.touches[0].clientX, {passive:true});
+  lb.addEventListener('touchend', e => {
+    if (sx === null) return;
+    const dx = e.changedTouches[0].clientX - sx;
+    if (Math.abs(dx) > 48) lbStep(dx < 0 ? 1 : -1);
+    sx = null;
+  }, {passive:true});
+})();
+
+/* drawer open/close */
+qs('#basketFab').addEventListener('click', () => openDrawer('basket'));
+qs('#drawerScrim').addEventListener('click', closeDrawer);
+
+/* cake studio inputs */
+qs('#cakeMsg').addEventListener('input', e => { cake.msg = e.target.value.trim(); updateCakePreview(); });
+qs('#cakeDate').addEventListener('input', e => { cake.date = e.target.value; updateCakePreview(); });
+
+/* ============================================================
+   NAVBAR / MOBILE MENU / SCROLL STATE
+============================================================ */
+const navbar = qs('#navbar');
+function onScroll(){
+  const y = window.scrollY;
+  navbar.classList.toggle('scrolled', y > 40);
+  qs('#backTop').classList.toggle('show', y > 700);
+  const h = document.documentElement.scrollHeight - innerHeight;
+  qs('#progressBar').style.transform = `scaleX(${h > 0 ? y/h : 0})`;
+  /* active section */
+  let cur = 'home';
+  qsa('section[data-nav]').forEach(s => { if (s.getBoundingClientRect().top <= 130) cur = s.id; });
+  qsa('.nav-link').forEach(l => l.classList.toggle('active', l.dataset.link === cur));
+  if (festival) qs('#festivalBar').style.transform = y > 260 ? 'translateY(-110%)' : '';
+}
+window.addEventListener('scroll', onScroll, {passive:true});
+
+function openMobile(){
+  qs('#mobileMenu').classList.add('open');
+  qs('#burger').classList.add('open'); qs('#burger').setAttribute('aria-expanded','true');
+  lenis && lenis.stop();
+  if (HAS_GSAP && !RM) gsap.fromTo('#mobileMenu .m-link', {y:26, autoAlpha:0}, {y:0, autoAlpha:1, duration:.5, stagger:.07, ease:'power2.out', delay:.1});
+}
+function closeMobile(){
+  if (!qs('#mobileMenu').classList.contains('open')) return;
+  qs('#mobileMenu').classList.remove('open');
+  qs('#burger').classList.remove('open'); qs('#burger').setAttribute('aria-expanded','false');
+  lenis && lenis.start();
+}
+qs('#burger').addEventListener('click', () => qs('#mobileMenu').classList.contains('open') ? closeMobile() : openMobile());
+qs('#burgerClose').addEventListener('click', closeMobile);
+qs('#backTop').addEventListener('click', () => lenis ? lenis.scrollTo(0, {duration:1.2}) : scrollTo({top:0, behavior: RM?'auto':'smooth'}));
+
+/* ============================================================
+   CAROUSELS — drag-to-scroll (mouse) + snap, arrows, autoplay
+============================================================ */
+function dragScroll(el){
+  let down = false, sx = 0, sl = 0, moved = 0;
+  el.addEventListener('pointerdown', e => {
+    if (e.pointerType !== 'mouse') return;
+    down = true; sx = e.clientX; sl = el.scrollLeft; moved = 0;
+  });
+  document.addEventListener('pointermove', e => {
+    if (!down) return;
+    const dx = e.clientX - sx; moved = Math.max(moved, Math.abs(dx));
+    el.scrollLeft = sl - dx;
+  });
+  document.addEventListener('pointerup', () => down = false);
+  el.addEventListener('click', e => { if (moved > 8){ e.stopPropagation(); e.preventDefault(); } }, true);
+}
+function stepCarousel(el, dir){
+  const card = el.firstElementChild;
+  const w = card ? card.getBoundingClientRect().width + 22 : 320;
+  el.scrollBy({ left: dir * w * (innerWidth > 768 ? 2 : 1), behavior: RM ? 'auto' : 'smooth' });
+}
+dragScroll(qs('#bsTrack')); dragScroll(qs('#revTrack'));
+qs('#bsPrev').addEventListener('click', () => stepCarousel(qs('#bsTrack'), -1));
+qs('#bsNext').addEventListener('click', () => stepCarousel(qs('#bsTrack'), 1));
+qs('#revPrev').addEventListener('click', () => stepCarousel(qs('#revTrack'), -1));
+qs('#revNext').addEventListener('click', () => stepCarousel(qs('#revTrack'), 1));
+
+/* reviews autoplay — pause on hover/touch */
+(function(){
+  const t = qs('#revTrack'); let timer = null;
+  const play = () => { if (RM) return; timer = setInterval(() => {
+    const max = t.scrollWidth - t.clientWidth - 8;
+    t.scrollLeft >= max ? t.scrollTo({left:0, behavior:'smooth'}) : stepCarousel(t, 1);
+  }, 4200); };
+  const stop = () => clearInterval(timer);
+  t.addEventListener('mouseenter', stop); t.addEventListener('touchstart', stop, {passive:true});
+  t.addEventListener('mouseleave', play);
+  play();
+})();
+
+/* ============================================================
+   OPEN-NOW LIVE STATUS
+============================================================ */
+function refreshOpen(){
+  const now = new Date(), h = now.getHours() + now.getMinutes()/60;
+  const H = DATA.hours;
+  let cls, txt;
+  if (h >= H.open && h < H.close - 1){ cls = 'open'; txt = 'Open Now'; }
+  else if (h >= H.close - 1 && h < H.close){ cls = 'soon'; txt = 'Closing Soon'; }
+  else { cls = 'closed'; txt = 'Closed · Opens 8 AM'; }
+  qsa('[data-open-badge]').forEach(b => { b.className = 'open-badge ' + cls; b.innerHTML = `<span class="dot"></span>${txt}`; });
+}
+refreshOpen(); setInterval(refreshOpen, 30000);
+
+/* ============================================================
+   HERO — dust particles + word reveal + parallax
+============================================================ */
+(function(){
+  if (RM) return;
+  const cv = qs('#dust'), ctx = cv.getContext('2d');
+  let W, Hh, pts = [];
+  function size(){ W = cv.width = cv.offsetWidth; Hh = cv.height = cv.offsetHeight; }
+  size(); window.addEventListener('resize', size);
+  for (let i=0;i<30;i++) pts.push({ x:Math.random(), y:Math.random(), r:.6+Math.random()*1.7, v:.08+Math.random()*.22, a:.15+Math.random()*.3, ph:Math.random()*6.28 });
+  (function tick(t){
+    requestAnimationFrame(tick);
+    if (window.scrollY > innerHeight || document.hidden) return; /* save GPU off-screen */
+    ctx.clearRect(0,0,W,Hh);
+    ctx.fillStyle = '#FFF8F0';
+    pts.forEach(p=>{
+      p.y -= p.v/600; if (p.y < -0.02) p.y = 1.02;
+      const x = p.x*W + Math.sin(t/1600 + p.ph)*14;
+      ctx.globalAlpha = p.a * (0.6 + 0.4*Math.sin(t/900 + p.ph));
+      ctx.beginPath(); ctx.arc(x, p.y*Hh, p.r, 0, 6.29); ctx.fill();
+    });
+    ctx.globalAlpha = 1;
+  })(0);
+})();
+
+/* ============================================================
+   CURSOR GLOW (desktop only)
+============================================================ */
+(function(){
+  if (!FINE || RM) return;
+  const g = qs('#cursorGlow');
+  let tx = -999, ty = -999, x = tx, y = ty;
+  window.addEventListener('pointermove', e => { tx = e.clientX; ty = e.clientY; }, {passive:true});
+  (function loop(){
+    x += (tx-x)*.12; y += (ty-y)*.12;
+    g.style.transform = `translate(${x}px,${y}px) translate(-50%,-50%)`;
+    requestAnimationFrame(loop);
+  })();
+})();
+
+/* magnetic hover */
+if (FINE && !RM) qsa('.magnetic').forEach(b => {
+  b.addEventListener('mousemove', e => {
+    const r = b.getBoundingClientRect();
+    b.style.transform = `translate(${(e.clientX-r.left-r.width/2)*.18}px, ${(e.clientY-r.top-r.height/2)*.28}px)`;
+  });
+  b.addEventListener('mouseleave', () => b.style.transform = '');
+});
+
+/* ============================================================
+   COUNT-UP STATS + ANIMATED RATING BARS
+============================================================ */
+function countUp(el){
+  const to = +el.dataset.count, suf = el.dataset.suffix || '';
+  if (RM){ el.textContent = to.toLocaleString('en-IN') + suf; return; }
+  const t0 = performance.now(), dur = 1500;
+  (function step(t){
+    const k = Math.min(1,(t-t0)/dur), e = 1-Math.pow(1-k,3);
+    el.textContent = Math.round(to*e).toLocaleString('en-IN') + suf;
+    if (k<1) requestAnimationFrame(step);
+  })(t0);
+}
+const io = new IntersectionObserver(entries => entries.forEach(en => {
+  if (!en.isIntersecting) return;
+  io.unobserve(en.target);
+  if (en.target.dataset.count !== undefined) countUp(en.target);
+  if (en.target.dataset.bar !== undefined) en.target.style.width = en.target.dataset.w + '%';
+}), {threshold:.4});
+qsa('[data-count],[data-bar]').forEach(el => io.observe(el));
+
+/* ============================================================
+   SCROLL REVEALS + PARALLAX (GSAP)
+============================================================ */
+function initMotion(){
+  if (!HAS_GSAP || RM) return;
+  qsa('[data-reveal]').forEach(el => {
+    const v = { up:{y:36}, left:{x:-42}, right:{x:42}, scale:{scale:.93}, fade:{} }[el.dataset.reveal] || {y:36};
+    gsap.from(el, { ...v, autoAlpha:0, duration:.95, ease:'power3.out',
+      delay: parseFloat(el.dataset.delay)||0,
+      scrollTrigger:{ trigger:el, start:'top 87%', once:true } });
+  });
+  qsa('[data-reveal-group]').forEach(g => {
+    gsap.from(g.children, { y:30, autoAlpha:0, duration:.7, stagger:.09, ease:'power2.out',
+      scrollTrigger:{ trigger:g, start:'top 85%', once:true } });
+  });
+  qsa('[data-parallax]').forEach(el => {
+    gsap.to(el, { yPercent: -(parseFloat(el.dataset.parallax)*100), ease:'none',
+      scrollTrigger:{ trigger:el, start:'top bottom', end:'bottom top', scrub:1 } });
+  });
+  gsap.to('#heroBg', { yPercent:16, ease:'none', scrollTrigger:{ trigger:'#home', start:'top top', end:'bottom top', scrub:true } });
+}
+
+/* hero word-by-word intro (runs after preloader) */
+function heroIntro(){
+  if (!HAS_GSAP || RM) return;
+  gsap.set('.word-in', { yPercent:112 });
+  gsap.timeline({defaults:{ease:'power3.out'}})
+    .from('#heroTag', { y:18, autoAlpha:0, duration:.7 })
+    .to('.word-in', { yPercent:0, duration:.9, stagger:.09 }, '-=.4')
+    .from('#heroSub', { y:22, autoAlpha:0, duration:.7 }, '-=.5')
+    .from('#heroCtas > *', { y:18, autoAlpha:0, stagger:.1, duration:.5 }, '-=.45')
+    .from('#heroChips > *', { y:12, autoAlpha:0, stagger:.07, duration:.45 }, '-=.35');
+}
+
+/* ============================================================
+   FESTIVAL BANNER (optional)
+============================================================ */
+const festival = DATA.festival;
+if (festival){
+  const bar = qs('#festivalBar');
+  bar.hidden = false; bar.textContent = festival.title;
+  navbar.style.top = '36px';
+}
+
+/* owner photo graceful fallback chain: /images/owner.jpg → Unsplash → picsum */
+(function(){
+  const img = qs('#ownerImg');
+  img.addEventListener('error', () => {
+    if (img.dataset.stage === '1'){ img.src = 'https://picsum.photos/seed/antra-owner/700/860'; img.dataset.stage = '2'; }
+    else if (img.dataset.stage !== '2'){ img.src = DATA.owner.photoFallback; img.dataset.stage = '1'; }
+  });
+})();
+
+/* ============================================================
+   INIT
+============================================================ */
+try {
+  buildMarquee(); buildTabs(); buildBestsellers(); buildReviews();
+  buildGallery(); buildFaq(); buildCakeStudio(); buildFooterBits();
+  showList(filtered()); updateFab();
+  window.addEventListener('resize', moveInk);
+  onScroll();
+  initMotion();
+} catch(err){
+  /* friendly fallback: reveal content + helpful note, keep the four contact links alive */
+  qs('#fatal').hidden = false;
+  try { paint(DATA.products); } catch(e){}
+}
+
+/* preloader — never longer than ~1.5s */
+(function(){
+  const pre = qs('#preloader');
+  const done = () => {
+    if (pre.classList.contains('done')) return;
+    pre.classList.add('done');
+    setTimeout(()=> pre.remove(), 700);
+    heroIntro();
+    lenis && lenis.start();
+  };
+  lenis && lenis.stop();
+  if (document.readyState === 'complete') setTimeout(done, 900);
+  else window.addEventListener('load', () => setTimeout(done, 700));
+  setTimeout(done, 1500); /* hard cap */
+})();
+
+})();
+</script>
+</body>
+</html>
